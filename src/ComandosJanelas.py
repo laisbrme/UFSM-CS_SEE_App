@@ -1,13 +1,12 @@
 class ComandosParaJanelas():
 
-    def semComando():
-        print(" ")
+    def semComando(self):
+        pass
 
-    def janelaSobre():
-        exec(open("menuAjuda.py").read())
-
+    def janelaSobre(self):
+        exec(open("menuAjuda.py", "r").read())
 
 
 
 teste = ComandosParaJanelas()
-teste.janelaSobre
+teste.janelaSobre()
