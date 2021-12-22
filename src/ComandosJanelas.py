@@ -4,10 +4,10 @@ class ComandosParaJanelas():
         print(" ")
 
     def janelaSobre():
-        open("menuAjuda.py").read()
+        exec(open("menuAjuda.py").read())
 
 
 
 
 teste = ComandosParaJanelas()
-teste.janelaSobre()
+teste.janelaSobre
