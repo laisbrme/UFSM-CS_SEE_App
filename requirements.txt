@@ -2,4 +2,5 @@ openpyxl
 pandas
 pywin32
 tkinter
+Pillow
 pyinstaller
