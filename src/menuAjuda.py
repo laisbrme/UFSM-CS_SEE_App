@@ -9,6 +9,8 @@ app = Tk()
 app.title("Sobre UFSM-CS SEE")
 app.geometry("450x300")
 
+
+
 texto_orientacao = Label(app,
                          text="Sobre UFSM-CS SEE App"
                                    "\nVersão 0.1"
