@@ -1,19 +1,21 @@
 '''
- Janela Sobre do menu Ajuda
+    Janela Sobre do menu Ajuda
 '''
 
 from tkinter import *
-from PIL import ImageTk, Image
 
 app = Tk()
-
 app.title("Sobre UFSM-CS SEE")
-app.geometry("450x300")
+app.resizable(width=False, height=False)
+caminho = 'image/sobre.gif'
 
-img = ImageTk.PhotoImage(Image.open("src\image\sobre.png"))
-panel = Label(root, image = img)
-panel.pack(side = "bottom", fill = "both", expand = "yes")
 
+foto = PhotoImage(file=caminho) # objeto imageM
+can=Canvas(app)
+can.pack(side=TOP) # ajeitar a disposição
+can.create_image(5, 5, image=foto, anchor=NW)  # do desenho
+
+'''
 texto_orientacao = Label(app,
                          text="Sobre UFSM-CS SEE App"
                                    "\nVersão 0.1"
@@ -25,7 +27,8 @@ texto_orientacao = Label(app,
                          font="Times 12",
                          )
 texto_orientacao.grid(column=0, row=0, padx=50, pady=50)
+'''
 
+Button(app, text='Fechar', command=quit).pack(side=BOTTOM, padx=0, pady=0)
 barraMenu = Menu(app)
-
 app.mainloop()

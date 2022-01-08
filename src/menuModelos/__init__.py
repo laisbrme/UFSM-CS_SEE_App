@@ -4,8 +4,3 @@ class ComandosParaJanelasModelos():
         pass
 
 
-
-'''
-teste = ComandosParaJanelas()
-teste.janelaSobre()
-'''
