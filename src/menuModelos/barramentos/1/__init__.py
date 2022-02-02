@@ -4,16 +4,13 @@
 
 from tkinter import *
 
+
 class Config:
 
-    def imagem(self, app, texto, caminho):
-        Label(app, text=texto, font=('Times', '14', 'bold')).grid(row=0, column=1,
-                                            sticky=W, pady=3)
+    def imagem(self, app, caminho):
+        self.img = PhotoImage(file=caminho)  # objeto imagem
+        Label(app, image=self.img).pack()
 
-        self.foto = PhotoImage(file=caminho)  # objeto imagem
-        self.can = Canvas(app)
-        self.can.grid(row=1, column=1)
-        self.can.create_image(2, 2, image=self.foto, anchor=N)  # do desenho
 
 class Elementos:
 
@@ -29,12 +26,27 @@ class Elementos:
     Reles = []
 
     def criaBotoesCheck(self, app, numS, numD, numTC, numTP, numRele):
+
+        self.container1 = Frame(app)
+        self.container2 = Frame(app)
+        self.container3 = Frame(app)
+        self.container4 = Frame(app)
+        self.container5 = Frame(app)
+        self.container6 = Frame(app)
+        self.container1.pack(side=LEFT)
+        self.container2.pack(side=LEFT)
+        self.container3.pack(side=LEFT)
+        self.container4.pack(side=LEFT)
+        self.container5.pack(side=LEFT)
+        self.container6.pack(side=BOTTOM)
+
+
         if numS == 0:
             pass
         else:
             for i in range(numS):
                 numChave = 'Chave ' + str(i+1)
-                chaves = Checkbutton(app, text=numChave).grid(row=2 + i, column=0, sticky=W)
+                Checkbutton(self.container1, text=numChave).pack(side=TOP)
                 i = +1
 
         if numD == 0:
@@ -42,7 +54,7 @@ class Elementos:
         else:
             for i in range(numD):
                 numDisjuntores = 'Disjuntor ' + str(i+1)
-                disjuntores = Checkbutton(app, text=numDisjuntores).grid(row=2 + i, column=1, sticky=W)
+                Checkbutton(self.container2, text=numDisjuntores).pack(side=TOP)
                 i = +1
 
         if numTC == 0:
@@ -50,7 +62,7 @@ class Elementos:
         else:
             for i in range(numTC):
                 numTrafosCs = 'TC ' + str(i+1)
-                TrafosCs = Checkbutton(app, text=numTrafosCs).grid(row=2 + i, column=2, sticky=W)
+                Checkbutton(self.container3, text=numTrafosCs).pack(side=TOP)
                 i = +1
 
         if numTP == 0:
@@ -58,7 +70,7 @@ class Elementos:
         else:
             for i in range(numTP):
                 numTrafosPs = 'TP ' + str(i+1)
-                TrafosPs = Checkbutton(app, text=numTrafosPs).grid(row=2 + i, column=3, sticky=W)
+                Checkbutton(self.container4, text=numTrafosPs).pack(side=TOP)
                 i = +1
 
         if numRele == 0:
@@ -66,8 +78,11 @@ class Elementos:
         else:
             for i in range(numRele):
                 numReles = 'RELE ' + str(i+1)
-                Reles = Checkbutton(app, text=numReles).grid(row=2 + i, column=4, sticky=W)
+                Checkbutton(self.container5, text=numReles).pack(side=TOP)
                 i = +1
+
+        Button(self.container6, text='Energizar', command=app.destroy).pack(side=LEFT)
+        Button(self.container6, text='Fechar', command=app.destroy).pack(side=RIGHT)
 
 class Manobras:
 

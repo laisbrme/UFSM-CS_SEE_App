@@ -10,6 +10,7 @@ from src.menuAjuda.__init__ import *
 
 app = Tk()
 app.title("UFSM-CS SEE")
+app.iconbitmap("ufsm-see.ico")
 app.geometry("300x100")
 app.configure(background="#dde")
 app.minsize(width=300, height=100)
