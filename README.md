@@ -1,11 +1,10 @@
 # [UFSM-CS_SEE_App](#UFSM-CS_SEE_App)
 Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
 
-## [Tabela de Conteudo](#tabela-de-conteudo)
-========================
+## [Tabela de Conteúdo](#tabela-de-conteúdo)
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
-   * [Tabela de Conteudo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
+   * [Tabela de Conteúdo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
    * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuários)
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-desenvolvedores)
