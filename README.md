@@ -1,17 +1,17 @@
 # [UFSM-CS_SEE_App](#UFSM-CS_SEE_App)
 Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
 
-## [Tabela de Conteudo](##tabela-de-conteudo)
+## [Tabela de Conteudo](#tabela-de-conteudo)
 ========================
 <!--ts-->
-   * [Sobre](#UFSM-CS_SEE_App)
-   * [Tabela de Conteudo](##tabela-de-conteudo)
-   * [Status do Projeto](##status)
+   * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
+   * [Tabela de Conteudo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
+   * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status)
    * [Pre Requisitos para usuários](##pre-requisitos-usuario)
-   * [Pre Requisitos para desenvolvedores](##pre-requisitos-desenvolvedores)
-   * [Tecnologias utilizadas](##tecnologias)
+   * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-desenvolvedores)
+   * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias)
    * [Autora](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#autora)
-   * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licen%C3%A7a)
+   * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licenca)
 <!--te-->
 
 ## [Status do Projeto:](##status)
@@ -24,11 +24,11 @@ Em desenvolvimento...
 - [ ] 
 
 
-## [Pre Requisitos para usuários](##pre-requisitos-usuario)
+## [Pre Requisitos para usuários](#pre-requisitos-usuario)
 EM andamento...
 
 
-## [Pre Requisitos para desenvolvedores](##pre-requisitos-desenvolvedores)
+## [Pre Requisitos para desenvolvedores](#pre-requisitos-desenvolvedores)
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Python](https://www.python.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
