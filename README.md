@@ -17,12 +17,6 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 Em desenvolvimento...
 
 
-## Features
-- [ ] 
-- [ ] 
-- [ ] 
-
-
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
 EM andamento...
 
@@ -39,6 +33,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [PyCharm Community](https://www.jetbrains.com/pt-br/pycharm/)
 - [Python](https://www.python.org/)
+- [LibreOffice Draw](https://pt-br.libreoffice.org/)
 
 ## [Autora](#autora)
 
