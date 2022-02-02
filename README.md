@@ -10,8 +10,8 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Pre Requisitos para usuários](##pre-requisitos-usuario)
    * [Pre Requisitos para desenvolvedores](##pre-requisitos-desenvolvedores)
    * [Tecnologias utilizadas](##tecnologias)
-   * [Autora](##autora)
-   * [Licença](##licenca)
+   * [Autora](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#autora)
+   * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licen%C3%A7a)
 <!--te-->
 
 ## [Status do Projeto:](##status)
@@ -34,18 +34,18 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
 
 
-## [Tecnologias utilizadas](##tecnologias)
+## [Tecnologias utilizadas](#tecnologias)
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [PyCharm Community](https://www.jetbrains.com/pt-br/pycharm/)
 - [Python](https://www.python.org/)
 
-## [Autora](##autora)
+## [Autora](#autora)
 
 Feito por Laís Brum Menezes. Entre em contato!
 
 [![Gmail Badge](https://img.shields.io/badge/-lais.brum@acad.ufsm.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lais.brum@acad.ufsm.br)](mailto:lais.brum@acad.ufsm.br)
 
-## [Licença](##licenca)
+## [Licença](#licenca)
 Este projeto está sob a licença do MIT, e pode ser usado por qualquer pessoa! Consulte a LICENÇA (https://github.com/laisbrme/UFSM-CS_SEE_App/blob/386a018c7384e5729e6ed8215553072ab70fa21c/LICENSE) para obter mais informações.
