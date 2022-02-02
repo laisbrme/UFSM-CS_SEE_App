@@ -14,7 +14,7 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licenca)
 <!--te-->
 
-## [Status do Projeto:](##status)
+## [Status do Projeto:](#status)
 Em desenvolvimento...
 
 
