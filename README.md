@@ -6,7 +6,7 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Tabela de Conteudo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
-   * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status)
+   * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
    * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-usuario)
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-desenvolvedores)
    * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias)
@@ -14,7 +14,7 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licenca)
 <!--te-->
 
-## [Status do Projeto:](#status)
+## [Status do Projeto:](#status-do-projeto)
 Em desenvolvimento...
 
 
