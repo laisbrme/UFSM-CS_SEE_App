@@ -23,7 +23,7 @@ class barra1:
         container2 = Elementos()
         manobra    = Manobras()
 
-        container1.imagem(self.app, caminho='1.png')
+        container1.imagem(self.app, caminho='b1.png')
         Label(self.app, text='Elementos:', font='Times 12 bold').pack(anchor=NW)
         container2.criaBotoesCheck(self.app, numS=10, numD=5, numTC=4, numTP=1, numRele=1)
 
