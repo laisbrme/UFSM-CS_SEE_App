@@ -28,8 +28,5 @@ class ComandosParaJanelasAjuda():
         self.app.mainloop()
 
     def janelaManual(self):
-        self.aux1 = os.getcwd() + '/src/menuAjuda/manual.pdf'
-        self.aux = self.aux1.replace("\\", '/')
-        self.diretorio = self.aux.replace('/', '//')
-        print(self.diretorio)
-        open(self.diretorio).read()
+        self.aux1 = os.getcwd() + '\src\menuAjuda\manual.pdf'
+        os.system(self.aux1)
