@@ -45,7 +45,7 @@ class Elementos:
             pass
         else:
             i = 0
-            while i <= numS:
+            while i < numS:
                 numChave = 'Chave ' + str(i+1) + '-' + str(i+2)
                 Checkbutton(self.container1, text=numChave).pack(side=TOP)
                 i+=2

@@ -1,5 +1,5 @@
 from tkinter import *
-import PyPDF2
+import os
 
 class ComandosParaJanelasAjuda():
 
@@ -9,6 +9,10 @@ class ComandosParaJanelasAjuda():
     def janelaSobre(self):
         self.app = Tk()
         self.app.title("Sobre UFSM-CS SEE")
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
         self.app.geometry('400x250')
         self.app.resizable(width=False, height=False)
 
@@ -24,5 +28,8 @@ class ComandosParaJanelasAjuda():
         self.app.mainloop()
 
     def janelaManual(self):
-        with open("sample.pdf", "rb") as f:
-            pdf = PyPDF2.PdfFileReader(f)
+        self.aux1 = os.getcwd() + '/src/menuAjuda/manual.pdf'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        print(self.diretorio)
+        open(self.diretorio).read()
