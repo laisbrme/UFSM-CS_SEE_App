@@ -4,13 +4,6 @@
 
 from tkinter import *
 
-class Config:
-
-
-    def imagem(self, app, caminho):
-        self.img = PhotoImage(file=caminho)  # objeto imagem
-        Label(app, image=self.img).pack(expand=YES, fill=BOTH)
-
 
 class Elementos:
 

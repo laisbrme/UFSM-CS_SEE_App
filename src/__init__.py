@@ -33,7 +33,7 @@ class janelas:
 
         barraMenu.add_cascade(label="Modelos", menu=menu2)
         menu2.add_cascade(label="1. Barramento Simples", menu=submenu1)
-        submenu1.add_command(label="1.Manobra no Disjuntor", command=CJM.menu1sub1)
+        submenu1.add_command(label="1.Manobra no Disjuntor", command=lambda:CJM.menu1sub1(app))
         submenu1.add_command(label="2.Manobra na Barra", command=CJM.menu1sub2)
         submenu1.add_command(label="3.Manobra no Transformador de Potência", command=CJM.menu1sub3)
 
