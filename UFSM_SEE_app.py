@@ -13,13 +13,9 @@ app.iconbitmap("ufsm-see.ico")
 app.configure(background="#dde")
 app.minsize(width=300, height=200)
 
-Jan = janelas()
-Jan.criaBarraMenus(app)
+menus = barraMenu()
+menus.criaBarraMenus(app)
 
-
-
-Scrollbar(app).pack(side="right", fill="y")
-
-info = 'Inicie uma nova manobra'
-statusbar = Label(app, text=info, bd=1, relief=SUNKEN, anchor=W).pack(side=BOTTOM, fill=X)
+status = 'Inicie uma nova manobra'
+Label(app, text=status, bd=1, relief=SUNKEN, anchor=W).pack(side=BOTTOM, fill=X)
 app.mainloop()

@@ -9,11 +9,11 @@ CJF = ComandosParaJanelasArquivos()
 CJM = ComandosParaJanelasModelos()
 CJA = ComandosParaJanelasAjuda()
 
-class janelas:
+class barraMenu:
     def criaBarraMenus(self, app):
-        barraMenu = Menu(app)
-        menu1 = Menu(barraMenu, tearoff=0)
-        barraMenu.add_cascade(label="Arquivos", menu=menu1)
+        menuBar = Menu(app)
+        menu1 = Menu(menuBar, tearoff=0)
+        menuBar.add_cascade(label="Arquivos", menu=menu1)
         menu1.add_command(label="Novo", command=CJF.semComando)
         menu1.add_command(label="Abrir", command=CJF.semComando)
         menu1.add_command(label="Salvar", command=CJF.semComando)
@@ -21,7 +21,7 @@ class janelas:
         menu1.add_separator()
         menu1.add_command(label="Fechar", command=app.quit)
 
-        menu2 = Menu(barraMenu, tearoff=0)
+        menu2 = Menu(menuBar, tearoff=0)
         submenu1 = Menu(menu2, tearoff=0)
         submenu2 = Menu(menu2, tearoff=0)
         submenu3 = Menu(menu2, tearoff=0)
@@ -31,7 +31,7 @@ class janelas:
         submenu7 = Menu(menu2, tearoff=0)
         submenu8 = Menu(menu2, tearoff=0)
 
-        barraMenu.add_cascade(label="Modelos", menu=menu2)
+        menuBar.add_cascade(label="Modelos", menu=menu2)
         menu2.add_cascade(label="1. Barramento Simples", menu=submenu1)
         submenu1.add_command(label="1.Manobra no Disjuntor", command=lambda:CJM.menu1sub1(app))
         submenu1.add_command(label="2.Manobra na Barra", command=CJM.menu1sub2)
@@ -72,9 +72,9 @@ class janelas:
         submenu8.add_command(label="2.tananã", command=CJM.semComando)
         submenu8.add_command(label="3.tananã", command=CJM.semComando)
 
-        menu3 = Menu(barraMenu, tearoff=0)
-        barraMenu.add_cascade(label="Ajuda", menu=menu3)
+        menu3 = Menu(menuBar, tearoff=0)
+        menuBar.add_cascade(label="Ajuda", menu=menu3)
         menu3.add_command(label="Manual", command=CJA.janelaManual)
         menu3.add_command(label="Sobre", command=CJA.janelaSobre)
 
-        app.configure(menu=barraMenu)
+        app.configure(menu=menuBar)
