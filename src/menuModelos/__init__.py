@@ -1,4 +1,4 @@
-from src.menuModelos.barramentos.manobras1Barra import *
+from src.menuModelos.manobrasBarras import *
 import os
 
 def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
