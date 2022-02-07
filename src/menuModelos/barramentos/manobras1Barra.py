@@ -3,26 +3,13 @@
 '''
 
 from tkinter import *
-from m1 import *
-from m2 import *
-from m3 import *
 
 class Config:
 
-    b1m1 = barra1
 
     def imagem(self, app, caminho):
         self.img = PhotoImage(file=caminho)  # objeto imagem
         Label(app, image=self.img).pack(expand=YES, fill=BOTH)
-
-    def execBar1Manobra1(self):
-        b1m1.manobra1()
-
-    def execBar1Manobra2(self):
-        pass
-
-    def execBar1Manobra3(self):
-        pass
 
 
 class Elementos:

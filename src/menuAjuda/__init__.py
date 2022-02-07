@@ -17,7 +17,7 @@ class ComandosParaJanelasAjuda():
         self.app.resizable(width=False, height=False)
 
         Label(self.app, text="\nSobre UFSM-CS SEE App"
-                            "\nVersão 0.b1"
+                            "\nVersão 1.0"
                             "\n\nEsta aplicação foi criada com o intuito de auxiliar"
                             "\nna disciplina de Subestações de Energia Elétrica,"
                             "\ndo curso de Engenharia Elétrica, da Universidade"
