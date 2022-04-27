@@ -1,15 +1,13 @@
 from src.menuModelos.manobrasBarras import *
 
-titulo = "Barramento Simples - Manobra no Disjuntor"
-textoImg = 'BARRAMENTO SIMPLES'
-
+titulo = "Barramento Simples"
 
 app = Tk()
 app.title(titulo)
 diretorio = 'C:/Users/laisb/Documents/GitHub/UFSM-CS_SEE_App/ufsm-see.ico'
 app.iconbitmap(diretorio)
 
-Label(app, text=textoImg, font='Times 14 bold').pack()
+Label(app, text=titulo, font='Times 14 bold').pack()
 
 img = PhotoImage(file='img/bar1.png')  # objeto imagem
 Label(app, image=img).pack(expand=YES, fill=BOTH)
