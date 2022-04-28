@@ -1,5 +1,6 @@
-from src.menuModelos.manobrasBarras import *
 from tkinter import *
+from src.__init__ import *
+from src.menuModelos.manobrasBarras import *
 
 class Janela:
     def __init__(self, toplevel):
@@ -12,7 +13,7 @@ titulo = "Barramento Dijuntor Duplo"
 
 bar6 = Tk()
 bar6.title(titulo)
-diretorio = 'C:/Users/laisb/Documents/GitHub/UFSM-CS_SEE_App/ufsm-see.ico'
-bar6.iconbitmap(diretorio)
+Configura = configJan()
+Configura.config(bar6)
 Janela(bar6)
 bar6.mainloop()

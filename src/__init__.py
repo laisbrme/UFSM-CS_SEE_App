@@ -9,6 +9,16 @@ CJF = ComandosParaJanelasArquivos()
 CJM = ComandosParaJanelasModelos()
 CJA = ComandosParaJanelasAjuda()
 
+class configJan:
+    def config(self, toplevel):
+        aux1 = os.getcwd() + '/src/ufsm-see.ico'
+        aux = aux1.replace("\\", '/')
+        diretorio = aux.replace('/', '//')
+        toplevel.iconbitmap(diretorio)
+        toplevel.wm_state('zoomed')
+        toplevel.configure(background="#dde")
+        toplevel.minsize(width=300, height=200)
+
 class barraMenu:
     def criaBarraMenus(self, app):
         menuBar = Menu(app)
@@ -22,24 +32,15 @@ class barraMenu:
         menu1.add_command(label="Fechar", command=app.quit)
 
         menu2 = Menu(menuBar, tearoff=0)
-        submenu1 = Menu(menu2, tearoff=0)
-        submenu2 = Menu(menu2, tearoff=0)
-        submenu3 = Menu(menu2, tearoff=0)
-        submenu4 = Menu(menu2, tearoff=0)
-        submenu5 = Menu(menu2, tearoff=0)
-        submenu6 = Menu(menu2, tearoff=0)
-        submenu7 = Menu(menu2, tearoff=0)
-        submenu8 = Menu(menu2, tearoff=0)
-
         menuBar.add_cascade(label="Modelos", menu=menu2)
-        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.semComando)
-        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=CJM.semComando)
-        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=CJM.semComando)
-        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=CJM.semComando)
-        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", menu=CJM.semComando)
-        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", menu=CJM.semComando)
-        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", menu=CJM.semComando)
-        menu2.add_cascade(label="8. Barramento em Anel", menu=CJM.semComando)
+        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.AbrirBar1)
+        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=CJM.AbrirBar2)
+        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=CJM.AbrirBar3)
+        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=CJM.AbrirBar4)
+        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", menu=CJM.AbrirBar5)
+        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", menu=CJM.AbrirBar6)
+        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", menu=CJM.AbrirBar7)
+        menu2.add_cascade(label="8. Barramento em Anel", menu=CJM.AbrirBar8)
 
         menu3 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Ajuda", menu=menu3)
@@ -47,3 +48,4 @@ class barraMenu:
         menu3.add_command(label="Sobre", command=CJA.janelaSobre)
 
         app.configure(menu=menuBar)
+

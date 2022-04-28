@@ -29,3 +29,27 @@ class ComandosParaJanelasModelos():
 
     def semComando(self):
         pass
+
+    def AbrirBar1(self):
+        pass
+
+    def AbrirBar2(self):
+        pass
+
+    def AbrirBar3(self):
+        pass
+
+    def AbrirBar4(self):
+        pass
+
+    def AbrirBar5(self):
+        pass
+
+    def AbrirBar6(self):
+        pass
+
+    def AbrirBar7(self):
+        pass
+
+    def AbrirBar8(self):
+        pass

@@ -8,11 +8,8 @@ from src.__init__ import *
 
 app = Tk()
 app.title("UFSM-CS SEE")
-app.iconbitmap("ufsm-see.ico")
-app.wm_state('zoomed')
-app.configure(background="#dde")
-app.minsize(width=300, height=200)
-
+Configura = configJan()
+Configura.config(app)
 menus = barraMenu()
 menus.criaBarraMenus(app)
 
