@@ -32,45 +32,14 @@ class barraMenu:
         submenu8 = Menu(menu2, tearoff=0)
 
         menuBar.add_cascade(label="Modelos", menu=menu2)
-        menu2.add_cascade(label="1. Barramento Simples", menu=submenu1)
-        submenu1.add_command(label="1.Manobra no Disjuntor", command=lambda:CJM.menu1sub1(app))
-        submenu1.add_command(label="2.Manobra na Barra", command=CJM.menu1sub2)
-        submenu1.add_command(label="3.Manobra no Transformador de Potência", command=CJM.menu1sub3)
-
-        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=submenu2)
-        submenu2.add_command(label="1.tananã", command=CJM.semComando)
-        submenu2.add_command(label="2.tananã", command=CJM.semComando)
-        submenu2.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=submenu3)
-        submenu3.add_command(label="1.tananã", command=CJM.semComando)
-        submenu3.add_command(label="2.tananã", command=CJM.semComando)
-        submenu3.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=submenu4)
-        submenu4.add_command(label="1.tananã", command=CJM.semComando)
-        submenu4.add_command(label="2.tananã", command=CJM.semComando)
-        submenu4.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", menu=submenu5)
-        submenu5.add_command(label="1.tananã", command=CJM.semComando)
-        submenu5.add_command(label="2.tananã", command=CJM.semComando)
-        submenu5.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", menu=submenu6)
-        submenu6.add_command(label="1.tananã", command=CJM.semComando)
-        submenu6.add_command(label="2.tananã", command=CJM.semComando)
-        submenu6.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", menu=submenu7)
-        submenu7.add_command(label="1.tananã", command=CJM.semComando)
-        submenu7.add_command(label="2.tananã", command=CJM.semComando)
-        submenu7.add_command(label="3.tananã", command=CJM.semComando)
-
-        menu2.add_cascade(label="8. Barramento em Anel", menu=submenu8)
-        submenu8.add_command(label="1.tananã", command=CJM.semComando)
-        submenu8.add_command(label="2.tananã", command=CJM.semComando)
-        submenu8.add_command(label="3.tananã", command=CJM.semComando)
+        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.semComando)
+        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=CJM.semComando)
+        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=CJM.semComando)
+        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=CJM.semComando)
+        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", menu=CJM.semComando)
+        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", menu=CJM.semComando)
+        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", menu=CJM.semComando)
+        menu2.add_cascade(label="8. Barramento em Anel", menu=CJM.semComando)
 
         menu3 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Ajuda", menu=menu3)

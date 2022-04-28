@@ -29,35 +29,3 @@ class ComandosParaJanelasModelos():
 
     def semComando(self):
         pass
-
-
-    def menu1sub1(self, app):
-        '''
-           Barramento Simples - Manobra no Disjuntor
-        '''
-        self.titulo = "Barramento Simples - Manobra no Disjuntor"
-        self.textoImg = 'BARRAMENTO SIMPLES'
-        self.aux1 = os.getcwd() + '/src/menuModelos/img/bar1.png'
-        self.aux = self.aux1.replace("\\", '/')
-        self.caminhoImg = self.aux.replace('/', '//')
-        print(self.caminhoImg)
-        #self.caminhoImg = 'C:/Users/laisb/Documents/GitHub/UFSM-CS_SEE_App/src/menuModelos/img/bar1.png'
-        criaJanBarras(app, self.titulo, self.textoImg, self.caminhoImg, numS=10, numD=5, numTC=4, numTP=1, numRele=1)
-
-    def menu1sub2(self):
-        '''
-           Barramento Simples - Manobra na Barra
-        '''
-        self.titulo = "Barramento Simples - Manobra na Barra"
-        self.textoImg = 'BARRAMENTO SIMPLES'
-        self.caminhoImg = os.getcwd() + '/img/bar1.png'
-        criaJanBarras(self.titulo, self.textoImg, self.caminhoImg, numS=10, numD=5, numTC=4, numTP=1, numRele=1)
-
-    def menu1sub3(self):
-        '''
-           Barramento Simples - Manobra no Transformador de Potência
-        '''
-        self.titulo = "Barramento Simples - Manobra no Transformador de Potência"
-        self.textoImg = 'BARRAMENTO SIMPLES'
-        self.caminhoImg = os.getcwd() + '/img/bar1.png'
-        criaJanBarras(self.titulo, self.textoImg, self.caminhoImg, numS=10, numD=5, numTC=4, numTP=1, numRele=1)
