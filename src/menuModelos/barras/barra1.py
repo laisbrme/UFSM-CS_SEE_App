@@ -14,7 +14,7 @@ menus.criaBarraMenus(app)
 
 Label(app, text=titulo, font='Times 14 bold').pack()
 
-img = PhotoImage(file='img/bar1.png')  # objeto imagem
+img = PhotoImage(file='../img/bar1.png')  # objeto imagem
 Label(app, image=img).pack(expand=YES, fill=BOTH)
 
 Label(app, text='Elementos:', font='Times 12 bold').pack(anchor=NW)

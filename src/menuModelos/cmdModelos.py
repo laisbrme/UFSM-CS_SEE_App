@@ -4,9 +4,15 @@
         - Barra de menus
 '''
 
-import os
-from src.menuModelos.barra6 import *
-from src.menuModelos.manobrasBarras import *
+from src.menuModelos.barras.barra1 import *
+from src.menuModelos.barras.barra2 import *
+from src.menuModelos.barras.barra3 import *
+from src.menuModelos.barras.barra4 import *
+from src.menuModelos.barras.barra5 import *
+from src.menuModelos.barras.barra6 import *
+from src.menuModelos.barras.barra7 import *
+from src.menuModelos.barras.barra8 import *
+
 
 def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
     #app = Tk()
@@ -35,37 +41,111 @@ def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, n
 class ComandosParaJanelasModelos():
 
     def semComando(self):
-        print('Acesso na classe Modelos')
+        pass
 
     def AbrirBar1(self):
-        print('Acesso na classe Modelos')
+        self.app = Tk()
+        self.titulo = "Barramento Simples"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+
+
+
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
 
     def AbrirBar2(self):
-        pass
-
-    def AbrirBar3(self):
-        pass
-
-    def AbrirBar4(self):
-        pass
-
-    def AbrirBar5(self):
-        pass
-
-    def AbrirBar6(self):
-        print('Abrindo Barra 6')
         self.app = Tk()
-        self.titulo = "Barramento Dijuntor Duplo"
-        print(self.titulo)
+        self.titulo = "Barramento Simples com Barra de Transferência"
         self.app.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
+
+    def AbrirBar3(self):
+        self.app = Tk()
+        self.titulo = "Barramento Simples com Seccionamento de Barra"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
+
+    def AbrirBar4(self):
+        self.app = Tk()
+        self.titulo = "Barramento Simples com Geração Auxiliar"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
+
+    def AbrirBar5(self):
+        self.app = Tk()
+        self.titulo = "Barramento Duplo a Quatro Chaves"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
+
+    def AbrirBar6(self):
+        self.app = Tk()
+        self.titulo = "Barramento Dijuntor Duplo"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
         self.app.mainloop()
 
     def AbrirBar7(self):
-        pass
+        self.app = Tk()
+        self.titulo = "Barramento Duplo e Disjuntor e Meio"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()
 
     def AbrirBar8(self):
-        pass
+        self.app = Tk()
+        self.titulo = "Barramento em Anel"
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+
+
+
+        self.app.mainloop()

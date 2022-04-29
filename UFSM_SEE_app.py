@@ -5,7 +5,6 @@
 from tkinter import *
 from src.cmdMenus import *
 
-
 app = Tk()
 app.title("UFSM-CS SEE")
 Configura = configJan()

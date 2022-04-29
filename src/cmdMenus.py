@@ -22,10 +22,9 @@ class configJan:
         toplevel.iconbitmap(diretorio)
 
     def config(self, toplevel):
-        toplevel.wm_state('zoomed')
+        #toplevel.wm_state('zoomed')
         toplevel.configure(background="#dde")
         toplevel.minsize(width=300, height=200)
-
 
 class barraMenu:
     def criaBarraMenus(self, app):
@@ -40,14 +39,14 @@ class barraMenu:
 
         menu2 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Modelos", menu=menu2)
-        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.AbrirBar1())
-        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=CJM.AbrirBar2)
-        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=CJM.AbrirBar3)
-        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=CJM.AbrirBar4)
-        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", menu=CJM.AbrirBar5)
-        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", menu=CJM.AbrirBar6)
-        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", menu=CJM.AbrirBar7)
-        menu2.add_cascade(label="8. Barramento em Anel", menu=CJM.AbrirBar8)
+        menu2.add_cascade(label="1. Barramento Simples", command=CJM.AbrirBar1)
+        menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", command=CJM.AbrirBar2)
+        menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", command=CJM.AbrirBar3)
+        menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", command=CJM.AbrirBar4)
+        menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", command=CJM.AbrirBar5)
+        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", command=CJM.AbrirBar6)
+        menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", command=CJM.AbrirBar7)
+        menu2.add_cascade(label="8. Barramento em Anel", command=CJM.AbrirBar8)
 
         menu3 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Ajuda", menu=menu3)

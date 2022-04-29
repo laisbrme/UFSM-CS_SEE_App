@@ -4,7 +4,6 @@
 
 from tkinter import *
 
-
 class Elementos:
 
     numChave = []
@@ -31,7 +30,6 @@ class Elementos:
         self.container3.pack(side=LEFT)
         self.container4.pack(side=LEFT)
         self.container5.pack(side=LEFT)
-
 
         if numS == 0:
             pass
