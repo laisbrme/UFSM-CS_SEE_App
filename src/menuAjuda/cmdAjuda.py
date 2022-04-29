@@ -1,3 +1,9 @@
+'''
+    Comandos para abertura de janelas:
+        - Sobre
+        - Manual
+'''
+
 from tkinter import *
 import os
 

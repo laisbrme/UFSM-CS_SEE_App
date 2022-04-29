@@ -1,23 +1,31 @@
+'''
+    Classes para:
+        - Configurar janela principal
+        - Barra de menus
+'''
 
 from tkinter import *
-
-from src.menuArquivos.__init__ import *
-from src.menuModelos.__init__ import *
-from src.menuAjuda.__init__ import *
+from src.menuArquivos.cmdArquivos import *
+from src.menuModelos.cmdModelos import *
+from src.menuAjuda.cmdAjuda import *
 
 CJF = ComandosParaJanelasArquivos()
 CJM = ComandosParaJanelasModelos()
 CJA = ComandosParaJanelasAjuda()
 
 class configJan:
-    def config(self, toplevel):
-        aux1 = os.getcwd() + '/src/ufsm-see.ico'
+
+    def iconeJan(self, toplevel):
+        aux1 = os.getcwd() + '/ufsm-see.ico'
         aux = aux1.replace("\\", '/')
         diretorio = aux.replace('/', '//')
         toplevel.iconbitmap(diretorio)
+
+    def config(self, toplevel):
         toplevel.wm_state('zoomed')
         toplevel.configure(background="#dde")
         toplevel.minsize(width=300, height=200)
+
 
 class barraMenu:
     def criaBarraMenus(self, app):
@@ -27,13 +35,12 @@ class barraMenu:
         menu1.add_command(label="Novo", command=CJF.semComando)
         menu1.add_command(label="Abrir", command=CJF.semComando)
         menu1.add_command(label="Salvar", command=CJF.semComando)
-        menu1.add_command(label="Salvar como...", command=CJF.semComando)
         menu1.add_separator()
         menu1.add_command(label="Fechar", command=app.quit)
 
         menu2 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Modelos", menu=menu2)
-        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.AbrirBar1)
+        menu2.add_cascade(label="1. Barramento Simples", menu=CJM.AbrirBar1())
         menu2.add_cascade(label="2. Barramento Simples com Barra de Transferência", menu=CJM.AbrirBar2)
         menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", menu=CJM.AbrirBar3)
         menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", menu=CJM.AbrirBar4)

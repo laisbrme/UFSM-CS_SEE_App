@@ -3,13 +3,14 @@
 '''
 
 from tkinter import *
-from src.__init__ import *
+from src.cmdMenus import *
 
 
 app = Tk()
 app.title("UFSM-CS SEE")
 Configura = configJan()
 Configura.config(app)
+Configura.iconeJan(app)
 menus = barraMenu()
 menus.criaBarraMenus(app)
 

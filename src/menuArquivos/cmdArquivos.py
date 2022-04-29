@@ -1,3 +1,8 @@
+'''
+    Comandos ...
+'''
+
+
 class ComandosParaJanelasArquivos():
 
     def semComando(self):

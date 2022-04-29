@@ -1,12 +1,16 @@
-
+from src.cmdMenus import *
 from src.menuModelos.manobrasBarras import *
 
 titulo = "Barramento Simples"
 
 app = Tk()
 app.title(titulo)
-diretorio = 'C:/Users/laisb/Documents/GitHub/UFSM-CS_SEE_App/src/ufsm-see.ico'
+diretorio = 'C:/Users/laisb/Documents/GitHub/UFSM-CS_SEE_App/ufsm-see.ico'
 app.iconbitmap(diretorio)
+
+# Teste insersão menu
+menus = barraMenu()
+menus.criaBarraMenus(app)
 
 Label(app, text=titulo, font='Times 14 bold').pack()
 

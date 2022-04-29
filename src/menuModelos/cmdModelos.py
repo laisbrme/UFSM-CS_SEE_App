@@ -1,5 +1,12 @@
-from src.menuModelos.manobrasBarras import *
+'''
+    Classes para:
+        - Configurar janelas
+        - Barra de menus
+'''
+
 import os
+from src.menuModelos.barra6 import *
+from src.menuModelos.manobrasBarras import *
 
 def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
     #app = Tk()
@@ -28,10 +35,10 @@ def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, n
 class ComandosParaJanelasModelos():
 
     def semComando(self):
-        pass
+        print('Acesso na classe Modelos')
 
     def AbrirBar1(self):
-        pass
+        print('Acesso na classe Modelos')
 
     def AbrirBar2(self):
         pass
@@ -46,7 +53,16 @@ class ComandosParaJanelasModelos():
         pass
 
     def AbrirBar6(self):
-        pass
+        print('Abrindo Barra 6')
+        self.app = Tk()
+        self.titulo = "Barramento Dijuntor Duplo"
+        print(self.titulo)
+        self.app.title(self.titulo)
+        self.aux1 = os.getcwd() + '/ufsm-see.ico'
+        self.aux = self.aux1.replace("\\", '/')
+        self.diretorio = self.aux.replace('/', '//')
+        self.app.iconbitmap(self.diretorio)
+        self.app.mainloop()
 
     def AbrirBar7(self):
         pass
