@@ -4,6 +4,7 @@
         - Barra de menus
 '''
 
+import os
 from tkinter import *
 from src.menuArquivos.cmdArquivos import *
 from src.menuModelos.cmdModelos import *
@@ -15,16 +16,16 @@ CJA = ComandosParaJanelasAjuda()
 
 class configJan:
 
-    def iconeJan(self, toplevel):
+    def iconeJan(self, app):
         aux1 = os.getcwd() + '/ufsm-see.ico'
         aux = aux1.replace("\\", '/')
         diretorio = aux.replace('/', '//')
-        toplevel.iconbitmap(diretorio)
+        app.iconbitmap(diretorio)
 
-    def config(self, toplevel):
-        #toplevel.wm_state('zoomed')
-        toplevel.configure(background="#dde")
-        toplevel.minsize(width=300, height=200)
+    def config(self, app):
+        #app.wm_state('zoomed')
+        app.configure(background="#dde")
+        app.minsize(width=300, height=200)
 
 class barraMenu:
     def criaBarraMenus(self, app):
@@ -35,7 +36,7 @@ class barraMenu:
         menu1.add_command(label="Abrir", command=CJF.semComando)
         menu1.add_command(label="Salvar", command=CJF.semComando)
         menu1.add_separator()
-        menu1.add_command(label="Fechar", command=app.quit)
+        menu1.add_command(label="Fechar", command=app.destroy)
 
         menu2 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Modelos", menu=menu2)

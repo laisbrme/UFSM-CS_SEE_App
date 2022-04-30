@@ -2,8 +2,10 @@
     Classes para:
         - Configurar janelas
         - Barra de menus
+'''
 
-
+import os
+'''
 from src.menuModelos.barras.barra1 import *
 from src.menuModelos.barras.barra2 import *
 from src.menuModelos.barras.barra3 import *
@@ -51,10 +53,8 @@ class ComandosParaJanelasModelos():
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-
-
-
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -68,6 +68,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -81,6 +82,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -94,6 +96,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -107,6 +110,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -114,14 +118,16 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar6(self):
         self.app = Tk()
-        self.titulo = "Barramento Dijuntor Duplo"
+        self.titulo = "Barramento Disjuntor Duplo"
         self.app.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
-
+        self.Jan6 = JanBar6()
+        self.Jan6.configBar6(self.app, self.titulo)
 
         self.app.mainloop()
 
@@ -133,6 +139,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
@@ -146,6 +153,7 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
         self.app.iconbitmap(self.diretorio)
+        self.app.minsize(width=300, height=200)
 
 
 
