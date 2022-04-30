@@ -2,16 +2,17 @@
     Classes para:
         - Configurar janelas
         - Barra de menus
-'''
+
 
 from src.menuModelos.barras.barra1 import *
 from src.menuModelos.barras.barra2 import *
 from src.menuModelos.barras.barra3 import *
 from src.menuModelos.barras.barra4 import *
 from src.menuModelos.barras.barra5 import *
+'''
 from src.menuModelos.barras.barra6 import *
-from src.menuModelos.barras.barra7 import *
-from src.menuModelos.barras.barra8 import *
+#from src.menuModelos.barras.barra7 import *
+#from src.menuModelos.barras.barra8 import *
 
 
 def criaJanBarras(app, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
