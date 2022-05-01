@@ -45,7 +45,7 @@ class barraMenu:
         menu2.add_cascade(label="3. Barramento Simples Com Seccionamento de Barra", command=CJM.AbrirBar3)
         menu2.add_cascade(label="4. Barramento Simples com Geração Auxiliar", command=CJM.AbrirBar4)
         menu2.add_cascade(label="5. Barramento Duplo a Quatro Chaves", command=CJM.AbrirBar5)
-        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", command=CJM.AbrirBar6)
+        menu2.add_cascade(label="6. Barramento Disjuntor Duplo", command=CJM.AbrirBar6(toplevel))
         menu2.add_cascade(label="7. Barramento Duplo e Disjuntor e Meio", command=CJM.AbrirBar7)
         menu2.add_cascade(label="8. Barramento em Anel", command=CJM.AbrirBar8)
 

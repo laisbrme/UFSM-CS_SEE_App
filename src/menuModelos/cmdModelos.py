@@ -17,28 +17,28 @@ from src.menuModelos.barras.barra6 import *
 #from src.menuModelos.barras.barra8 import *
 
 
-def criaJanBarras(toplevel, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
-    #toplevel = Tk()
-    toplevel.title(titulo)
+def criaJanBarras(janBar, titulo, textoImg, caminhoImg, numS, numD, numTC, numTP, numRele):
+    #janBar = Tk()
+    janBar.title(titulo)
     aux1 = os.getcwd() + '/ufsm-see.ico'
     aux = aux1.replace("\\", '/')
     diretorio = aux.replace('/', '//')
-    toplevel.iconbitmap(diretorio)
+    janBar.iconbitmap(diretorio)
 
-    Label(toplevel, text=textoImg, font='Times 14 bold').pack()
+    Label(janBar, text=textoImg, font='Times 14 bold').pack()
 
     img = PhotoImage(file=caminhoImg)  # objeto imagem
-    Label(toplevel, image=img).pack(expand=YES, fill=BOTH)
+    Label(janBar, image=img).pack(expand=YES, fill=BOTH)
 
     container2 = Elementos()
-    Label(toplevel, text='Elementos:', font='Times 12 bold').pack(anchor=NW)
-    container2.criaBotoesCheck(toplevel, numS, numD, numTC, numTP, numRele)
+    Label(janBar, text='Elementos:', font='Times 12 bold').pack(anchor=NW)
+    container2.criaBotoesCheck(janBar, numS, numD, numTC, numTP, numRele)
 
     container3 = Frame()
-    Button(container3, text='Energizar', command=toplevel.destroy).pack(side=LEFT)
-    Button(container3, text='Fechar', command=toplevel.destroy).pack(side=RIGHT)
+    Button(container3, text='Energizar', command=janBar.destroy).pack(side=LEFT)
+    Button(container3, text='Fechar', command=janBar.destroy).pack(side=RIGHT)
 
-    #toplevel.mainloop()
+    #janBar.mainloop()
 
 
 class ComandosParaJanelasModelos():
@@ -47,114 +47,109 @@ class ComandosParaJanelasModelos():
         pass
 
     def AbrirBar1(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Simples"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
     def AbrirBar2(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Simples com Barra de Transferência"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
     def AbrirBar3(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Simples com Seccionamento de Barra"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
     def AbrirBar4(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Simples com Geração Auxiliar"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
     def AbrirBar5(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Duplo a Quatro Chaves"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
-    def AbrirBar6(self):
-        self.toplevel = Tk()
+    def AbrirBar6(self, janBar):
+        self.container = Frame(janBar)
         self.titulo = "Barramento Disjuntor Duplo"
-        self.toplevel.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
 
         self.Jan6 = JanBar6()
-        self.Jan6.configBar6(self.toplevel, self.titulo)
-
-        self.toplevel.mainloop()
+        self.Jan6.configBar6(self.janBar, self.titulo)
 
     def AbrirBar7(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento Duplo e Disjuntor e Meio"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
 
     def AbrirBar8(self):
-        self.toplevel = Tk()
+        self.janBar = Tk()
         self.titulo = "Barramento em Anel"
-        self.toplevel.title(self.titulo)
+        self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
-        self.toplevel.iconbitmap(self.diretorio)
-        self.toplevel.minsize(width=300, height=200)
+        self.janBar.iconbitmap(self.diretorio)
+        self.janBar.minsize(width=300, height=200)
 
 
 
-        self.toplevel.mainloop()
+        self.janBar.mainloop()
