@@ -16,27 +16,27 @@ CJA = ComandosParaJanelasAjuda()
 
 class configJan:
 
-    def iconeJan(self, app):
+    def iconeJan(self, toplevel):
         aux1 = os.getcwd() + '/ufsm-see.ico'
         aux = aux1.replace("\\", '/')
         diretorio = aux.replace('/', '//')
-        app.iconbitmap(diretorio)
+        toplevel.iconbitmap(diretorio)
 
-    def config(self, app):
-        #app.wm_state('zoomed')
-        app.configure(background="#dde")
-        app.minsize(width=300, height=200)
+    def config(self, toplevel):
+        #toplevel.wm_state('zoomed')
+        toplevel.configure(background="#dde")
+        toplevel.minsize(width=300, height=200)
 
 class barraMenu:
-    def criaBarraMenus(self, app):
-        menuBar = Menu(app)
+    def criaBarraMenus(self, toplevel):
+        menuBar = Menu(toplevel)
         menu1 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Arquivos", menu=menu1)
         menu1.add_command(label="Novo", command=CJF.semComando)
         menu1.add_command(label="Abrir", command=CJF.semComando)
         menu1.add_command(label="Salvar", command=CJF.semComando)
         menu1.add_separator()
-        menu1.add_command(label="Fechar", command=app.destroy)
+        menu1.add_command(label="Fechar", command=toplevel.destroy)
 
         menu2 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Modelos", menu=menu2)
@@ -54,5 +54,5 @@ class barraMenu:
         menu3.add_command(label="Manual", command=CJA.janelaManual)
         menu3.add_command(label="Sobre", command=CJA.janelaSobre)
 
-        app.configure(menu=menuBar)
+        toplevel.configure(menu=menuBar)
 
