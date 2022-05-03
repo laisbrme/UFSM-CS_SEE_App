@@ -62,7 +62,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar2(self):
         self.janBar = Tk()
-        self.titulo = "Barramento Simples com Barra de Transferência"
+        self.titulo = "Barramento Principal com Barra de Transferência"
         self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
@@ -76,7 +76,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar3(self):
         self.janBar = Tk()
-        self.titulo = "Barramento Simples com Seccionamento de Barra"
+        self.titulo = "Barramento Principal com Seccionamento de Barra"
         self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
@@ -90,7 +90,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar4(self):
         self.janBar = Tk()
-        self.titulo = "Barramento Simples com Geração Auxiliar"
+        self.titulo = "Duplo Barramento Simples com Geração Auxiliar"
         self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
@@ -104,7 +104,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar5(self):
         self.janBar = Tk()
-        self.titulo = "Barramento Duplo a Quatro Chaves"
+        self.titulo = "Barramento Duplo com Disjuntor a Quatro Chaves"
         self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
@@ -118,7 +118,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar6(self, janBar):
         self.container = Frame(janBar)
-        self.titulo = "Barramento Disjuntor Duplo"
+        self.titulo = "Barramento Duplo com Disjuntor Duplo"
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
@@ -128,7 +128,7 @@ class ComandosParaJanelasModelos():
 
     def AbrirBar7(self):
         self.janBar = Tk()
-        self.titulo = "Barramento Duplo e Disjuntor e Meio"
+        self.titulo = "Barramento Duplo com Disjuntor e Meio"
         self.janBar.title(self.titulo)
         self.aux1 = os.getcwd() + '/ufsm-see.ico'
         self.aux = self.aux1.replace("\\", '/')
