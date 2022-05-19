@@ -6,6 +6,7 @@
 
 import os
 from tkinter import *
+from tkinter import ttk
 from src.menuArquivos.cmdArquivos import *
 from src.menuModelos.cmdModelos import *
 from src.menuAjuda.cmdAjuda import *

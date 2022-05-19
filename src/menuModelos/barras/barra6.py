@@ -1,6 +1,7 @@
 import os
-from src.menuModelos.manobrasBarras import *
 from tkinter import *
+from tkinter import ttk
+from src.menuModelos.manobrasBarras import *
 from PIL import ImageTk, Image
 
 class JanBar6:

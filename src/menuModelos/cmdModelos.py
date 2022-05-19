@@ -5,6 +5,8 @@
 '''
 
 import os
+from tkinter import *
+from tkinter import ttk
 '''
 from src.menuModelos.barras.barra1 import *
 from src.menuModelos.barras.barra2 import *
@@ -123,8 +125,8 @@ class ComandosParaJanelasModelos():
         self.aux = self.aux1.replace("\\", '/')
         self.diretorio = self.aux.replace('/', '//')
 
-        self.Jan6 = JanBar6()
-        self.Jan6.configBar6(self.janBar, self.titulo)
+        #self.Jan6 = JanBar6()
+        #self.Jan6.configBar6(self.janBar, self.titulo)
 
     def AbrirBar7(self):
         self.janBar = Tk()
