@@ -1,7 +1,6 @@
 import os
 from tkinter import ttk
 from tkinter import *
-from tkinter import messagebox
 
 
 app = Tk()
@@ -40,7 +39,6 @@ def analiseD3(diagrama, telaInt, combo, botao1):
     else:
         print('não entrou no while')
 
-
 def analiseD5(diagrama, telaInt, combo, botao1):
     pass
 
@@ -70,7 +68,7 @@ def cliclouB1(diagrama, telaInt, combo, botao1):
 container1 = Frame(app, bd=4, relief=GROOVE)
 container2 = Frame(app, bd=4, relief=GROOVE)
 subcontainer1 = LabelFrame(container2, bg="#dde", bd=4, relief=GROOVE)
-subcontainer2 = LabelFrame(container2, text='Elemento(s)', bd=4)
+subcontainer2 = LabelFrame(container2, text='ELEMENTO(S)', font='times 12 bold', bd=4)
 subcontainer3 = LabelFrame(container2, bd=4)
 container1.pack(side='left', padx=10, pady=10)
 container2.pack(side='left', fill='y', padx=10, pady=10)
@@ -89,26 +87,26 @@ telaInt = Label(subcontainer1,
                           'Barramento Duplo com Disjuntor Duplo\n\n' \
                           'Defina o elemento com falha!\n' \
                           '--------------------------------------------------------------',
-                     font='times 12 bold',
+                     font='times 14 bold',
                      justify='center',
                      bg="#dde")
 
 # Criação Combobox
 clicada = StringVar()
-combo = ttk.Combobox(subcontainer2, textvariable=clicada, state='readonly')
+combo = ttk.Combobox(subcontainer2, textvariable=clicada, font=('Times New Roman', '14'), state='readonly')
 combo['values'] = ['Disjuntor D1',
                    'Disjuntor D3',
                    'Disjuntor D5',
                    'Disjuntor D7',]
 
 # Criação Botões
-botao1 = Button(subcontainer3, text='Iniciar Manobra', command= lambda:cliclouB1(diagrama, telaInt, combo, botao1))
-botao2 = Button(subcontainer3, text='Sair', command=lambda:app.destroy())
+botao1 = Button(subcontainer3, text='Iniciar Manobra', font='times 14', command= lambda:cliclouB1(diagrama, telaInt, combo, botao1))
+botao2 = Button(subcontainer3, text='Sair', font='times 14', command=lambda:app.destroy())
 
 # Exibição
 diagrama.pack(fill='both')
 telaInt.pack(fill='both', expand='yes', padx=10, pady=10)
-combo.pack(fill='x', side='left', padx=10, pady=10)
+combo.pack(fill='x', padx=10, pady=10)
 botao1.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 botao2.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 
