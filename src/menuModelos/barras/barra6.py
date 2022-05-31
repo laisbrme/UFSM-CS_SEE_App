@@ -9,18 +9,6 @@ app.iconbitmap('img/ufsm-see.ico')
 def clicouB1():
     return True
 
-def verificaCombo(ElemSel, ElemEsperado, botao1):
-    if ElemSel == ElemEsperado:
-        return ElemEsperado
-    else:
-        botao1.configure(command=lambda:clicouB1())
-        while combo.get() != ElemEsperado and botao1.bind('<Button-1>', clicouB1()) == True:
-            print('entrou no while')
-            telaInt.configure(text= '--------------------------------------------------------------\n' \
-                                    'Seleção inválida!\n' \
-                                    'Selecione o próximo passo:\n' \
-                                    '--------------------------------------------------------------')
-
 def finaliza(diagrama, telaInt, combo, botao1, ElemFalha):
     ElemFalha = ElemSel
     if ElemFalha == 'Disjuntor D1':
@@ -261,6 +249,8 @@ def D3P1(diagrama, telaInt, combo, botao1, ElemFalha):
                                 'Ligar D4',
                                 'Ligar D6',
                                 'Ligar D8', ])
+        ElemSel = combo.get()
+        print('Elemento selecionado dentro do if é ' + ElemSel)
         botao1.configure(command=D3P2(diagrama, telaInt, combo, botao1, ElemFalha))
         print('7. Saindo de D3P1')
     else:
@@ -271,10 +261,10 @@ def D3P1(diagrama, telaInt, combo, botao1, ElemFalha):
         D3P1(diagrama, telaInt, combo, botao1, ElemFalha)
 
 def analiseD3(diagrama, telaInt, combo, botao1, ElemFalha):
-    print('4. Inicialização da análise')
+    print('3. Inicialização da análise')
     ElemSel = combo.get()
-    print('Elemento Selecionado: ' + ElemSel)
-    print('Elemento com falha: ' + ElemFalha)
+    print('3. Elemento Selecionado: ' + ElemSel)
+    print('3. Elemento com falha: ' + ElemFalha)
     if ElemSel == 'Fechar S3-4':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
@@ -299,13 +289,13 @@ def analiseD3(diagrama, telaInt, combo, botao1, ElemFalha):
                                 'Ligar D4',
                                 'Ligar D6',
                                 'Ligar D8', ])
-        print('Dentro do ELSE: '+ ElemSel)
+        print('3. Dentro do ELSE: '+ ElemSel)
         botao1.configure(command=D3P1(diagrama, telaInt, combo, botao1, ElemFalha))
-        print('5. Primeiro Passo Selecionado')
+        print('3. Primeiro Passo Selecionado')
     else:
         telaInt.configure(text='--------------------------------------------------------------\n' \
                                'Seleção inválida!\n' \
-                               'Selecione o próximo passo:' \
+                               'Selecione o próximo passo:\n' \
                                '--------------------------------------------------------------')
         analiseD3(diagrama, telaInt, combo, botao1, ElemFalha)
 
@@ -318,9 +308,8 @@ def analiseD7(diagrama, telaInt, combo, botao1, ElemFalha):
 def selectFalha(diagrama, telaInt, combo, botao1):
     print('2. Seleção do Disjuntor com Falha')
     ElemSel = combo.get()
-    print('Elemento Selecionado: ' + ElemSel)
+    print('2. Elemento Selecionado: ' + ElemSel)
     ElemFalha = ElemSel
-    print('Elemento com falha: ' + ElemFalha)
     if ElemSel == 'Disjuntor D1':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
@@ -349,7 +338,6 @@ def selectFalha(diagrama, telaInt, combo, botao1):
         botao1.configure(text='Próximo Passo', command=lambda: analiseD1(diagrama, telaInt, combo, botao1, ElemFalha))
         botao2.configure(text='Finalizar Manobra')
 
-
     elif ElemSel == 'Disjuntor D3':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
@@ -373,10 +361,11 @@ def selectFalha(diagrama, telaInt, combo, botao1):
                                 'Ligar D4',
                                 'Ligar D6',
                                 'Ligar D8', ])
-        print('Dentro do ELSE: ' + ElemSel)
+        ElemSel = combo.get()
+        print('2. Primeiro Passo: ' + ElemSel)
         botao1.configure(text='Próximo Passo', command=lambda: analiseD3(diagrama, telaInt, combo, botao1, ElemFalha))
         botao2.configure(text='Finalizar Manobra')
-        print('3. Disjuntor com Falha Selecionado')
+        print('2. Disjuntor com Falha Selecionado')
 
     elif ElemSel == 'Disjuntor D5':
         # newImage = PhotoImage(file='img/bar6.png')
@@ -458,8 +447,7 @@ telaInt = Label(subcontainer1,
                      bg="#dde")
 
 # Criação Combobox
-clicada = StringVar()
-combo = ttk.Combobox(subcontainer2, textvariable=clicada, font=('Times New Roman', '14'), state='readonly')
+combo = ttk.Combobox(subcontainer2, font=('Times New Roman', '14'), state='readonly')
 combo['values'] = ['Disjuntor D1',
                    'Disjuntor D3',
                    'Disjuntor D5',
@@ -476,7 +464,7 @@ combo.pack(fill='x', padx=10, pady=10)
 botao1.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 botao2.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 
-print('1. Programa iniciado')
+print('1. Programa iniciado\n')
 
 #combo.bind('<<ComboboxSelected>>', analise)
 #botao1.bind('<Button-1>', True)
