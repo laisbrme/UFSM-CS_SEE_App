@@ -7,7 +7,8 @@ app.title("Barramento Duplo com Disjuntor Duplo")
 app.iconbitmap('img/ufsm-see.ico')
 
 def clicouB1():
-    return True
+    ElemSel = combo.get()
+    return ElemSel
 
 def finaliza(diagrama, telaInt, combo, botao1, ElemFalha):
     ElemFalha = ElemSel
@@ -466,7 +467,7 @@ botao2.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 
 print('1. Programa iniciado\n')
 
-#combo.bind('<<ComboboxSelected>>', analise)
+combo.bind('<<ComboboxSelected>>', clicouB1)
 #botao1.bind('<Button-1>', True)
 #botao2.bind('<Button-1>', app.destroy())
 
