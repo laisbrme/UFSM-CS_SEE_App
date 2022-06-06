@@ -6,6 +6,8 @@
 
 from tkinter import *
 import os
+import subprocess as sp
+import webbrowser as wb
 
 class ComandosParaJanelasAjuda():
 
@@ -34,4 +36,7 @@ class ComandosParaJanelasAjuda():
         self.app.mainloop()
 
     def janelaManual(self):
-        open('manual.pdf')
+        self.path = os.getcwd() + '\manual.pdf'
+        #os.system(self.path)
+        #sp.Popen([self.path], shell=True)
+        #wb.open_new(r'manual.pdf')
