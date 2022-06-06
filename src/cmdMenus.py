@@ -4,29 +4,13 @@
         - Barra de menus
 '''
 
-import os
-from tkinter import *
-from tkinter import ttk
-from src.menuArquivos.cmdArquivos import *
-from src.menuModelos.cmdModelos import *
-from src.menuAjuda.cmdAjuda import *
+from src.MenuArquivos import *
+from src.MenuModelos import *
+from src.MenuAjuda import *
 
 CJF = ComandosParaJanelasArquivos()
 CJM = ComandosParaJanelasModelos()
 CJA = ComandosParaJanelasAjuda()
-
-class configJan:
-
-    def iconeJan(self, toplevel):
-        aux1 = os.getcwd() + '/ufsm-see.ico'
-        aux = aux1.replace("\\", '/')
-        diretorio = aux.replace('/', '//')
-        toplevel.iconbitmap(diretorio)
-
-    def config(self, toplevel):
-        #toplevel.wm_state('zoomed')
-        toplevel.configure(background="#dde")
-        toplevel.minsize(width=300, height=200)
 
 class barraMenu:
     def criaBarraMenus(self, toplevel):
@@ -46,7 +30,7 @@ class barraMenu:
         menu2.add_cascade(label="3. Barramento Principal com Seccionamento de Barra", command=CJM.AbrirBar3)
         menu2.add_cascade(label="4. Duplo Barramento Simples com Geração Auxiliar", command=CJM.AbrirBar4)
         menu2.add_cascade(label="5. Barramento Duplo com Disjuntor a Quatro Chaves", command=CJM.AbrirBar5)
-        menu2.add_cascade(label="6. Barramento Duplo com Disjuntor Duplo", command=CJM.AbrirBar6(toplevel))
+        menu2.add_cascade(label="6. Barramento Duplo com Disjuntor Duplo", command=CJM.AbrirBar6)
         menu2.add_cascade(label="7. Barramento Duplo com Disjuntor e Meio", command=CJM.AbrirBar7)
         menu2.add_cascade(label="8. Barramento em Anel", command=CJM.AbrirBar8)
 

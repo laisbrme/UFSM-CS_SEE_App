@@ -34,5 +34,4 @@ class ComandosParaJanelasAjuda():
         self.app.mainloop()
 
     def janelaManual(self):
-        self.aux1 = os.getcwd() + '\src\menuAjuda\manual.pdf'
-        os.system(self.aux1)
+        open('manual.pdf')

@@ -2,18 +2,16 @@
     Código da interface gráfica da aplicação UFSM SEE
 '''
 
-import os
-from tkinter import *
-from tkinter import ttk
 from src.cmdMenus import *
 
 app = Tk()
 app.title("UFSM-CS SEE")
-Configura = configJan()
-Configura.config(app)
-Configura.iconeJan(app)
-menus = barraMenu()
-menus.criaBarraMenus(app)
+app.iconbitmap('src/barras/img/ufsm-see.ico')
+app.configure(background="#dde")
+app.minsize(width=300, height=200)
+app.resizable(False, False)
+MenuJan = barraMenu()
+MenuJan.criaBarraMenus(app)
 
 status = ' Janela Principal | Inicie uma nova manobra'
 Label(app, text=status, bd=1, relief=SUNKEN, anchor=W).pack(side=BOTTOM, fill=X)
