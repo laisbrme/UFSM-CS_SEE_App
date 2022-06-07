@@ -3,7 +3,6 @@
         - Barra de menus
 '''
 
-from tkinter import ttk
 from tkinter import *
 
 '''
@@ -18,7 +17,9 @@ from src.barras.barra8 import *
 '''
 
 
-class ComandosParaJanelasModelos():
+class ComandosParaJanelasModelos:
+    def __init__(self):
+        pass
 
     def semComando(self):
         pass

@@ -3,11 +3,9 @@
 '''
 
 
-class ComandosParaJanelasArquivos():
-
+class ComandosParaJanelasArquivos:
     def semComando(self):
         pass
-
 
 
 '''
