@@ -10,6 +10,7 @@ app.iconbitmap('src/barras/img/ufsm-see.ico')
 app.configure(background="#dde")
 app.minsize(width=300, height=200)
 app.resizable(False, False)
+app.eval('tk::PlaceWindow . center')
 MenuJan = barraMenu()
 MenuJan.criaBarraMenus(app)
 

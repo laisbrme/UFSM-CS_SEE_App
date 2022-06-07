@@ -29,6 +29,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -38,6 +39,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -47,6 +49,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -56,6 +59,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -65,6 +69,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -74,6 +79,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -83,6 +89,7 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()
 
@@ -92,5 +99,6 @@ class ComandosParaJanelasModelos():
         self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
+        self.janBar.eval('tk::PlaceWindow . center')
 
         self.janBar.mainloop()

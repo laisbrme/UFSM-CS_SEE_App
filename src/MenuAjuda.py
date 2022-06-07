@@ -17,12 +17,10 @@ class ComandosParaJanelasAjuda():
     def janelaSobre(self):
         self.app = Tk()
         self.app.title("Sobre UFSM-CS SEE")
-        self.aux1 = os.getcwd() + '/ufsm-see.ico'
-        self.aux = self.aux1.replace("\\", '/')
-        self.diretorio = self.aux.replace('/', '//')
-        self.app.iconbitmap(self.diretorio)
+        self.app.overrideredirect(True)
         self.app.geometry('400x250')
         self.app.resizable(width=False, height=False)
+        self.app.eval('tk::PlaceWindow . center')
 
         Label(self.app, text="\nSobre UFSM-CS SEE App"
                             "\nVersão 1.0"
@@ -37,7 +35,6 @@ class ComandosParaJanelasAjuda():
 
     def janelaManual(self):
         self.path = os.getcwd() + '\src\manual.pdf'
-        print(self.path)
         os.system(self.path)
         #sp.Popen([self.path], shell=True)
         #wb.open_new(r'manual.pdf')
