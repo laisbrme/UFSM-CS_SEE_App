@@ -3,7 +3,8 @@
         - Barra de menus
 '''
 
-
+from tkinter import ttk
+from tkinter import *
 
 '''
 from src.barras.barra1 import *
@@ -25,7 +26,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar1(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Simples")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -34,7 +35,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar2(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Principal com Barra de Transferência")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -43,7 +44,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar3(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Principal com Seccionamento de Barra")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -52,7 +53,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar4(self):
         self.janBar = Tk()
         self.janBar.title("Duplo Barramento Simples com Geração Auxiliar")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -61,7 +62,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar5(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Duplo com Disjuntor a Quatro Chaves")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -70,7 +71,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar6(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Duplo com Disjuntor Duplo")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -79,7 +80,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar7(self):
         self.janBar = Tk()
         self.janBar.title("Barramento Duplo com Disjuntor e Meio")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
@@ -88,7 +89,7 @@ class ComandosParaJanelasModelos():
     def AbrirBar8(self):
         self.janBar = Tk()
         self.janBar.title("Barramento em Anel")
-        self.janBar.iconbitmap('barras/img/ufsm-see.ico')
+        self.janBar.overrideredirect(True)
         self.janBar.minsize(width=300, height=200)
         self.janBar.resizable(False, False)
 
