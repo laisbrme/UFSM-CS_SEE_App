@@ -36,7 +36,8 @@ class ComandosParaJanelasAjuda():
         self.app.mainloop()
 
     def janelaManual(self):
-        self.path = os.getcwd() + '\manual.pdf'
-        #os.system(self.path)
+        self.path = os.getcwd() + '\src\manual.pdf'
+        print(self.path)
+        os.system(self.path)
         #sp.Popen([self.path], shell=True)
         #wb.open_new(r'manual.pdf')
