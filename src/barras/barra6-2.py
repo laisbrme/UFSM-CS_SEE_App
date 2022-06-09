@@ -24,6 +24,8 @@ image = PhotoImage(file='img/bar6.png')
 diagrama = Canvas(container1, bg='white', height=900, width=620)
 diagrama.create_image(0,0, image=image, anchor=NW)
 #diagrama = Label(container1, image=image)
+diagrama.pack(expand=True, fill='both')
+
 
 # Criação Tela Interativa
 telaInt = Label(subcontainer1,
@@ -34,20 +36,27 @@ telaInt = Label(subcontainer1,
                      font='times 14 bold',
                      justify='center',
                      bg="#dde")
+telaInt.pack(fill='both', expand='yes', padx=10, pady=10)
 
 # Criação Combobox
-combo = ttk.Combobox(subcontainer2, font=('Times New Roman', '14'), state='readonly')
+ComboVar = StringVar()
+combo = ttk.Combobox(subcontainer2, textvariable=ComboVar,font=('Times New Roman', '14'), state='readonly')
 combo['values'] = ['Disjuntor D1',
                    'Disjuntor D3',
                    'Disjuntor D5',
                    'Disjuntor D7',]
+combo.pack(fill='x', padx=10, pady=10)
+
+def ComboGet():
+    Var = combo.get()
+    print('Entrou na função ComboGet()')
+    return Var
 
 def selectFalha():
     print('2. Seleção do Disjuntor com Falha')
-    ElemSel = combo.get()
+    ElemSel = ComboGet()
     ElemFalha = ElemSel
     print('2. Elemento com Falha: ' + ElemFalha + '\n')
-    combo.delete(0, END)
 
     if ElemSel == 'Disjuntor D1':
         # newImage = PhotoImage(file='img/bar6.png')
@@ -72,7 +81,7 @@ def selectFalha():
                                 'Ligar D4',
                                 'Ligar D6',
                                 'Ligar D8', ])
-        ElemSel = combo.get()
+
 
         def analiseD1():
             pass
@@ -106,13 +115,9 @@ def selectFalha():
                                 'Ligar D6',
                                 'Ligar D8', ])
 
-        print('3. Primeiro Passo: ' + ElemSel)
-
-        combo.delete(0, END)
-
         def analiseD3():
             print('3. Inicialização da análise')
-            ElemSel = combo.get()
+            ElemSel = ComboGet()
             print('3. Elemento Selecionado: ' + ElemSel)
             if ElemSel == 'Fechar S3-4':
                 # newImage = PhotoImage(file='img/bar6.png')
@@ -139,20 +144,51 @@ def selectFalha():
                                         'Ligar D6',
                                         'Ligar D8', ])
                 print('3. Dentro do ELSE: ' + ElemSel)
+
+                def D3P1():
+                    print('4. Entrou em D3P1')
+                    ElemSel = ComboGet()
+                    print('4. Elemento Selecionado: ' + ElemSel)
+                    if ElemSel == 'Ligar D2':
+                        # newImage = PhotoImage(file='img/bar6.png')
+                        # diagrama.configure(image=newImage)
+                        telaInt.configure(text='--------------------------------------------------------------\n' \
+                                               'Disjuntor de transferência D2 ligado\n' \
+                                               'Selecione o próximo passo:\n' \
+                                               '--------------------------------------------------------------')
+                        combo.configure(values=['Trocar D3',
+                                                'Abrir S1-2',
+                                                'Abrir S5-6',
+                                                'Abrir S9-10',
+                                                'Abrir S13-14',
+                                                'Abrir S3-4',
+                                                'Fechar S7-8',
+                                                'Fechar S11-12',
+                                                'Fechar S15-16',
+                                                'Desligar D1',
+                                                'Desligar D3',
+                                                'Desligar D5',
+                                                'Desligar D7',
+                                                'Desligar D2',
+                                                'Ligar D4',
+                                                'Ligar D6',
+                                                'Ligar D8', ])
+                    else:
+                        telaInt.configure(text='--------------------------------------------------------------\n' \
+                                               'Seleção inválida!\n' \
+                                               'Selecione o próximo passo:\n' \
+                                               '--------------------------------------------------------------')
+                        D3P1()
+
                 botao1.configure(command=D3P1())
-                print('3. Primeiro Passo Selecionado')
             else:
                 telaInt.configure(text='--------------------------------------------------------------\n' \
                                        'Seleção inválida!\n' \
                                        'Selecione o próximo passo:\n' \
                                        '--------------------------------------------------------------')
-                analiseD3(diagrama, telaInt, combo, botao1, ElemFalha)
+                analiseD3()
 
-            combo.delete(0, END)
-
-        combo.delete(0, END)
-
-        botao1.configure(text='Próximo Passo', command=lambda: analiseD3(diagrama, telaInt, combo, botao1, ElemFalha))
+        botao1.configure(text='Próximo Passo', command=lambda: analiseD3())
         botao2.configure(text='Finalizar Manobra')
 
     elif ElemSel == 'Disjuntor D5':
@@ -215,16 +251,10 @@ def selectFalha():
         botao1.configure(text='Próximo Passo', command=lambda: analiseD7(diagrama, telaInt, combo, botao1, ElemFalha))
         botao2.configure(text='Finalizar Manobra')
 
-    combo.delete(0, END)
 
 # Criação Botões
-botao1 = Button(subcontainer3, text='Iniciar Manobra', font='times 14', command= lambda:selectFalha())
+botao1 = Button(subcontainer3, text='Iniciar Manobra', font='times 14', command=lambda:selectFalha())
 botao2 = Button(subcontainer3, text='Sair', font='times 14', command=lambda:app.destroy())
-
-# Exibição
-diagrama.pack(expand=True, fill='both')
-telaInt.pack(fill='both', expand='yes', padx=10, pady=10)
-combo.pack(fill='x', padx=10, pady=10)
 botao1.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 botao2.pack(side='left', fill='x', expand='yes', padx=10, pady=10)
 
