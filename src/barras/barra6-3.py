@@ -7,13 +7,8 @@ app.title("Barramento Duplo com Disjuntor Duplo")
 #app.iconbitmap('img/ufsm-see.ico')
 
 
-def finaliza(elemFalha=None):
-    print('10. Entrou em FINALIZA')
-    elem_sel = combo.get()
-    print('10. Elemento Selecionado: ' + elem_sel)
-    print('10. Elemento com Falha: ' + elemFalha)
-
-    if elemFalha == 'Disjuntor D1':
+def finaliza(elem_sel):
+    if elem_sel == 'Trocar D1':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
         telaInt.configure(text='--------------------------------------------------------------\n'
@@ -21,7 +16,7 @@ def finaliza(elemFalha=None):
                                '--------------------------------------------------------------')
 
 
-    elif elemFalha == 'Disjuntor D3':
+    elif elem_sel == 'Trocar D3':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
         telaInt.configure(text='--------------------------------------------------------------\n'
@@ -29,7 +24,7 @@ def finaliza(elemFalha=None):
                                '--------------------------------------------------------------')
 
 
-    elif elemFalha == 'Disjuntor D5':
+    elif elem_sel == 'Trocar D5':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
         telaInt.configure(text='--------------------------------------------------------------\n'
@@ -37,13 +32,12 @@ def finaliza(elemFalha=None):
                                '--------------------------------------------------------------')
 
 
-    elif elemFalha == 'Disjuntor D7':
+    elif elem_sel == 'Trocar D7':
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
         telaInt.configure(text='--------------------------------------------------------------\n'
                                'Manobra em Disjuntor D7 finalizada!\n'
                                '--------------------------------------------------------------')
-
 
 
 def Disj3Passo6():
@@ -55,27 +49,13 @@ def Disj3Passo6():
         # newImage = PhotoImage(file='img/bar6.png')
         # diagrama.configure(image=newImage)
         telaInt.configure(text='--------------------------------------------------------------\n'
-                               'Seccionadoras S5 e S6 abertas\n'
+                               'Disjuntor D3 trocado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Abrir S1-2',
-                                'Fechar S5-6',
-                                'Abrir S9-10',
-                                'Abrir S13-14',
-                                'Abrir S3-4',
-                                'Abrir S7-8',
-                                'Fechar S11-12',
-                                'Fechar S15-16',
-                                'Desligar D1',
-                                'Ligar D3',
-                                'Desligar D5',
-                                'Desligar D7',
-                                'Desligar D2',
-                                'Desligar D4',
-                                'Ligar D6',
-                                'Ligar D8', ])
+        combo.pack_forget()
         print('9. Dentro do IF \n')
-        botao1.configure(command=lambda: finaliza())
+        print(elem_sel)
+        botao1.configure(text='Finalizar', command=lambda: finaliza(elem_sel))
     else:
         telaInt.configure(text='--------------------------------------------------------------\n'
                                'Seleção inválida!\n'
@@ -350,11 +330,11 @@ def selectFalha():
                             'Ligar D8', ])
     combo.set('')
     botao1.configure(text='Próximo Passo')
-    botao2.configure(text='Finalizar Manobra')
+    botao2.configure(text='Sair')
 
     if elem_sel == 'Disjuntor D1':
-        # newImage = PhotoImage(file='img/bar6.png')
-        # diagrama.configure(image=newImage)
+        newImage = PhotoImage(file='img/bar6D3a.png')
+        diagrama.configure(image=newImage)
 
         def analiseD1():
             pass
@@ -402,7 +382,7 @@ subcontainer3.pack(fill='both', expand='yes', padx=10, pady=10)
 
 # Objeto imagem:
 image = PhotoImage(file='img/bar6.png')
-diagrama = Canvas(container1, bg='white', height=900, width=620)
+diagrama = Canvas(container1, bg='white', height=1000, width=700)
 diagrama.create_image(0, 0, image=image, anchor=NW)
 #diagrama = Label(container1, image=image)
 diagrama.pack(expand=True, fill='both')
