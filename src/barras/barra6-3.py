@@ -342,8 +342,8 @@ def selectFalha():
         botao1.configure(command=lambda: analiseD1())
 
     elif elem_sel == 'Disjuntor D3':
-        #newImage = PhotoImage(file='img/bar6.png')
-        #diagrama.configure(image=newImage)
+        newImage = PhotoImage(file='img/bar6D3a.png')
+        diagrama.create_image(0, 0, image=newImage, anchor=NW)
 
         print('2. Dentro do IF \n')
 
