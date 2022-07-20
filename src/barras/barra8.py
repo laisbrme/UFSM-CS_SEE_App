@@ -173,11 +173,10 @@ def Disj7Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D7e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D7'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -549,11 +548,10 @@ def Disj6Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D6e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D6'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -925,11 +923,10 @@ def Disj5Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D5e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D5'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -1301,11 +1298,10 @@ def Disj4Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D4e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D4'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -1677,11 +1673,10 @@ def Disj3Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D3e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D3'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -2053,11 +2048,10 @@ def Disj2Passo3():
         newImage = PhotoImage(file='img/bar8/bar8D2e.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-        telaInt.configure(
-            text='--------------------------------------------------------------\n'
-                 elem_sel + ' ligado\n'
-                 'Selecione o próximo passo:\n'
-                 '--------------------------------------------------------------')
+        telaInt.configure(text='--------------------------------------------------------------\n'
+                               ' ' + elem_sel + ' ligado\n'
+                               'Selecione o próximo passo:\n'
+                               '--------------------------------------------------------------')
         combo.configure(values=['Trocar D2'
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
