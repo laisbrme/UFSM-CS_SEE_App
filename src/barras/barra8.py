@@ -96,7 +96,7 @@ def Disj7Passo5():
                  'Seccionadoras S13 e S14 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -137,7 +137,7 @@ def Disj7Passo4():
                  'Disjuntor D6 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -177,7 +177,7 @@ def Disj7Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -217,7 +217,7 @@ def Disj7Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -257,7 +257,7 @@ def Disj7Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -297,7 +297,7 @@ def Disj7Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -336,7 +336,7 @@ def Disj7Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -376,7 +376,7 @@ def analiseD7():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -406,7 +406,7 @@ def analiseD7():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D7'
+        combo.configure(values=['Trocar D7',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -471,7 +471,7 @@ def Disj6Passo5():
                  'Seccionadoras S11 e S12 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -512,7 +512,7 @@ def Disj6Passo4():
                  'Disjuntor D6 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -552,7 +552,7 @@ def Disj6Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -592,7 +592,7 @@ def Disj6Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -632,7 +632,7 @@ def Disj6Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -672,7 +672,7 @@ def Disj6Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -711,7 +711,7 @@ def Disj6Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -751,7 +751,7 @@ def analiseD6():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -781,7 +781,7 @@ def analiseD6():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D6'
+        combo.configure(values=['Trocar D6',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -846,7 +846,7 @@ def Disj5Passo5():
                  'Seccionadoras S9 e S10 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -887,7 +887,7 @@ def Disj5Passo4():
                  'Disjuntor D5 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -927,7 +927,7 @@ def Disj5Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -967,7 +967,7 @@ def Disj5Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1007,7 +1007,7 @@ def Disj5Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1047,7 +1047,7 @@ def Disj5Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1086,7 +1086,7 @@ def Disj5Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1126,7 +1126,7 @@ def analiseD5():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1156,7 +1156,7 @@ def analiseD5():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D5'
+        combo.configure(values=['Trocar D5',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1221,7 +1221,7 @@ def Disj4Passo5():
                  'Seccionadoras S7 e S8 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Fechar S7-S8',
@@ -1262,7 +1262,7 @@ def Disj4Passo4():
                  'Disjuntor D4 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1302,7 +1302,7 @@ def Disj4Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1342,7 +1342,7 @@ def Disj4Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1382,7 +1382,7 @@ def Disj4Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1422,7 +1422,7 @@ def Disj4Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1461,7 +1461,7 @@ def Disj4Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1501,7 +1501,7 @@ def analiseD4():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1531,7 +1531,7 @@ def analiseD4():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D4'
+        combo.configure(values=['Trocar D4',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1596,7 +1596,7 @@ def Disj3Passo5():
                  'Seccionadoras S5 e S6 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Fechar S5-S6',
                                 'Abrir S7-S8',
@@ -1637,7 +1637,7 @@ def Disj3Passo4():
                  'Disjuntor D3 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1677,7 +1677,7 @@ def Disj3Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1717,7 +1717,7 @@ def Disj3Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1757,7 +1757,7 @@ def Disj3Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1797,7 +1797,7 @@ def Disj3Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1836,7 +1836,7 @@ def Disj3Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1876,7 +1876,7 @@ def analiseD3():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1906,7 +1906,7 @@ def analiseD3():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D3'
+        combo.configure(values=['Trocar D3',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -1971,7 +1971,7 @@ def Disj2Passo5():
                  'Seccionadoras S3 e S4 abertas\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Fechar S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2012,7 +2012,7 @@ def Disj2Passo4():
                  'Disjuntor D2 desligado\n'
                  'Selecione o próximo passo:\n'
                  '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2052,7 +2052,7 @@ def Disj2Passo3():
                                ' ' + elem_sel + ' ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2092,7 +2092,7 @@ def Disj2Passo2a():
 								'Seccionadoras S17 e S18 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2132,7 +2132,7 @@ def Disj2Passo2b():
 								'Seccionadoras S15 e S16 fechadas\n'
 								'Selecione o próximo passo:\n'
 								'--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2172,7 +2172,7 @@ def Disj2Passo1a():
                                'Disjuntor de transferência D8 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2211,7 +2211,7 @@ def Disj2Passo1b():
                                'Disjuntor de transferência D9 ligado\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2251,7 +2251,7 @@ def analiseD2():
                                'Seccionadoras S15 e S16 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
@@ -2281,7 +2281,7 @@ def analiseD2():
                                'Seccionadoras S17 e S18 fechadas\n'
                                'Selecione o próximo passo:\n'
                                '--------------------------------------------------------------')
-        combo.configure(values=['Trocar D2'
+        combo.configure(values=['Trocar D2',
                                 'Abrir S3-S4',
                                 'Abrir S5-S6',
                                 'Abrir S7-S8',
