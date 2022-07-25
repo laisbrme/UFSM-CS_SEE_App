@@ -2243,7 +2243,7 @@ def analiseD2():
     elem_sel = combo.get()
 
     if elem_sel == 'Fechar S15-S16':
-        newImage = PhotoImage(file='img/bar8/bar8D3b2.png')
+        newImage = PhotoImage(file='img/bar8/bar8D2b2.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
 
@@ -2273,7 +2273,7 @@ def analiseD2():
         botao1.configure(command=lambda: Disj2Passo1a())
 
     elif elem_sel == 'Fechar S17-S18':
-        newImage = PhotoImage(file='img/bar8/bar8D3b1.png')
+        newImage = PhotoImage(file='img/bar8/bar8D2b1.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
 
@@ -2349,18 +2349,12 @@ def selectFalha():
         diagrama.configure(image=newImage)
         diagrama.image = newImage
 
-        def analiseD3():
-            pass
-
         botao1.configure(command=lambda: analiseD3())
 
     elif elem_sel == 'Disjuntor D4':
         newImage = PhotoImage(file='img/bar8/bar8D4a.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-
-        def analiseD4():
-            pass
 
         botao1.configure(command=lambda: analiseD4())
 
@@ -2369,9 +2363,6 @@ def selectFalha():
         diagrama.configure(image=newImage)
         diagrama.image = newImage
 
-        def analiseD5():
-            pass
-
         botao1.configure(command=lambda: analiseD5())
 
     elif elem_sel == 'Disjuntor D6':
@@ -2379,18 +2370,12 @@ def selectFalha():
         diagrama.configure(image=newImage)
         diagrama.image = newImage
 
-        def analiseD6():
-            pass
-
         botao1.configure(command=lambda: analiseD6())
 
     elif elem_sel == 'Disjuntor D7':
         newImage = PhotoImage(file='img/bar8/bar8D7a.png')
         diagrama.configure(image=newImage)
         diagrama.image = newImage
-
-        def analiseD7():
-            pass
 
         botao1.configure(command=lambda: analiseD7())
 
