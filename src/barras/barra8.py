@@ -2230,7 +2230,7 @@ def Disj2Passo1b():
                                 'Desligar D9' ])
         combo.set('')
 
-        botao1.configure(command=lambda: Disj2Passo2())
+        botao1.configure(command=lambda: Disj2Passo2b())
     else:
         telaInt.configure(text='--------------------------------------------------------------\n'
                                'Seleção inválida!\n'
