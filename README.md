@@ -6,7 +6,9 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Tabela de Conteúdo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
-   * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuários)
+   * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
+   * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
+   * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuario)
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-desenvolvedores)
    * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias-utilizadas)
    * [Autora](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#autora)
@@ -16,6 +18,19 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 ## [Status do Projeto:](#status-do-projeto)
 Em desenvolvimento...
 
+## [Barramentos Concluídos:](#barramentos-concluidos)
+1. Barramento Simples (Incompleto)
+2. Barramento Principal com Barra de Transferência (Incompleto)
+3. Barramento Principal com Seccionamento de Barra (Incompleto)
+4. Duplo Barramento Simples com Geração Auxiliar (Incompleto)
+5. Barramento Duplo com Disjuntor a Quatro Chaves (Incompleto)
+6. Barramento Duplo com Disjuntor Duplo (Completo)
+7. Barramento Duplo com Disjuntor e Meio (Incompleto)
+8. Barramento Duplo com Disjuntor e Um Terço (Para ajuste)
+9. Barramento em Anel (Incompleto)
+
+## [Modificações Futuras concluídos:](#modificacoes-futuras)
+- Adicionar arranjo BD+T- 3-4Ch
 
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
 Em andamento...
