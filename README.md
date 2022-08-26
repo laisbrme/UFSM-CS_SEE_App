@@ -19,8 +19,8 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 Em desenvolvimento...
 
 ## [Barramentos Concluídos:](#barramentos-concluidos)
-1. Barramento Simples (Incompleto)
-2. Barramento Principal com Barra de Transferência (Incompleto)
+1. Barramento Simples (Para teste)
+2. Barramento Principal com Barra de Transferência (Para teste)
 3. Barramento Principal com Seccionamento de Barra (Incompleto)
 4. Duplo Barramento Simples com Geração Auxiliar (Incompleto)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Incompleto)
