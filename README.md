@@ -19,21 +19,26 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 Em desenvolvimento...
 
 ## [Barramentos Concluídos:](#barramentos-concluidos)
-1. Barramento Simples (Para teste)
-2. Barramento Principal com Barra de Transferência (Para teste)
+1. Barramento Simples (Completo)
+2. Barramento Principal com Barra de Transferência (Testar)
 3. Barramento Principal com Seccionamento de Barra (Incompleto)
 4. Duplo Barramento Simples com Geração Auxiliar (Incompleto)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Incompleto)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
 7. Barramento Duplo com Disjuntor e Meio (Incompleto)
-8. Barramento Duplo com Disjuntor e Um Terço (Para ajuste)
+8. Barramento Duplo com Disjuntor e Um Terço (Completo)
 9. Barramento em Anel (Incompleto)
 
 ## [Modificações Futuras concluídos:](#modificacoes-futuras)
-- Adicionar arranjo BD+T- 3-4Ch
+- Implementar botão para reiniciar a manobra;
+- 
+- Adicionar arranjo BD+T- 3-4Ch;
+
 
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
-Em andamento...
+- Sistema Operacional Windows 64 bits.
+- Para uma boa visualização, utilizar em computadores com resolução Full HD (1920 x 1080 px
+).
 
 
 ## [Pre Requisitos para desenvolvedores](#pre-requisitos-para-desenvolvedores)
@@ -47,7 +52,7 @@ Além disto é bom ter um editor para trabalhar com o código como [PyCharm](htt
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [PyCharm Community](https://www.jetbrains.com/pt-br/pycharm/)
-- [Python](https://www.python.org/)
+- [Linguagem Python](https://www.python.org/)
 - [LibreOffice Draw](https://pt-br.libreoffice.org/)
 
 ## [Autora](#autora)
