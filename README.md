@@ -21,7 +21,7 @@ Em desenvolvimento...
 ## [Barramentos Concluídos:](#barramentos-concluidos)
 1. Barramento Simples (Completo)
 2. Barramento Principal com Barra de Transferência (Testar)
-3. Barramento Principal com Seccionamento de Barra (Incompleto)
+3. Barramento Principal com Seccionamento de Barra (Testar)
 4. Duplo Barramento Simples com Geração Auxiliar (Incompleto)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Incompleto)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
