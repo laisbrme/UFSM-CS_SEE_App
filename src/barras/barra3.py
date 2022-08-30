@@ -95,7 +95,8 @@ def inicia():
 								   'Seccionadoras S17 e S18 abertas\n'
 								   'Selecione o próximo passo:\n\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D8',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -136,7 +137,8 @@ def inicia():
 								   'Disjuntor D8 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D8',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -202,7 +204,8 @@ def inicia():
 								   'Seccionadoras S15 e S16 abertas\n'
 								   'Selecione o próximo passo:\n\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D7',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -243,7 +246,8 @@ def inicia():
 								   'Disjuntor D7 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D7',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -309,7 +313,8 @@ def inicia():
 								   'Seccionadoras S13 e S14 abertas\n'
 								   'Selecione o próximo passo:\n\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D6',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -350,7 +355,8 @@ def inicia():
 								   'Disjuntor D6 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D6',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -416,7 +422,8 @@ def inicia():
 								   'Seccionadoras S11 e S12 abertas\n'
 								   'Selecione o próximo passo:\n\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D5',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -457,7 +464,8 @@ def inicia():
 								   'Disjuntor D5 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D5',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -523,7 +531,8 @@ def inicia():
 								   'Seccionadoras S9 e S10 abertas\n'
 								   'Selecione o próximo passo:\n\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D4',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Fechar S9-S10',
@@ -564,7 +573,8 @@ def inicia():
 								   'Disjuntor D4 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D4',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
@@ -672,7 +682,8 @@ def inicia():
 								   'Disjuntor D3 desligado\n\n'
 								   'Selecione o próximo passo:\n'
 								   '--------------------------------------------------------------')
-			combo.configure(values=['Abrir S1-S2',
+			combo.configure(values=['Trocar D3',
+                                    'Abrir S1-S2',
 									'Abrir S3-S4',
 									'Abrir S7-S8',
 									'Abrir S9-S10',
