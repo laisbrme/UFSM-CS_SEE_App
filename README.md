@@ -22,7 +22,7 @@ Em desenvolvimento...
 1. Barramento Simples (Completo)
 2. Barramento Principal com Barra de Transferência (Testar)
 3. Barramento Principal com Seccionamento de Barra (Testar)
-4. Duplo Barramento Simples com Geração Auxiliar (Incompleto)
+4. Duplo Barramento Simples com Geração Auxiliar (Testar)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Incompleto)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
 7. Barramento Duplo com Disjuntor e Meio (Incompleto)
