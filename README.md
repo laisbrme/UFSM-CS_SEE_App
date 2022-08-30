@@ -27,7 +27,7 @@ Em desenvolvimento...
 6. Barramento Duplo com Disjuntor Duplo (Completo)
 7. Barramento Duplo com Disjuntor e Meio (Incompleto)
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
-9. Barramento em Anel (Incompleto)
+9. Barramento em Anel (Testar)
 
 ## [Modificações Futuras concluídos:](#modificacoes-futuras)
 - Implementar botão para reiniciar a manobra;
