@@ -25,7 +25,7 @@ Em desenvolvimento...
 4. Duplo Barramento Simples com Geração Auxiliar (Testar)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Testar)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
-7. Barramento Duplo com Disjuntor e Meio (**Incompleto**)
+7. Barramento Duplo com Disjuntor e Meio (Testar)
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
 9. Barramento em Anel (Testar)
 
