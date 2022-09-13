@@ -51,9 +51,9 @@ Além disto é bom ter um editor para trabalhar com o código como [PyCharm](htt
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)(https://www.jetbrains.com/pt-br/pycharm/)
-![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)(https://www.python.org/)
-![LibreOffice](https://img.shields.io/badge/LibreOffice-%2318A303?style=for-the-badge&logo=LibreOffice&logoColor=white)(https://pt-br.libreoffice.org/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.jetbrains.com/pt-br/pycharm/)
+[![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)](https://www.python.org/)
+[![LibreOffice](https://img.shields.io/badge/LibreOffice-%2318A303?style=for-the-badge&logo=LibreOffice&logoColor=white)](https://pt-br.libreoffice.org/)
 
 ## [Autora](#autora)
 
