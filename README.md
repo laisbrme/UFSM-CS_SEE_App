@@ -62,5 +62,5 @@ Feito por Laís Brum Menezes. Entre em contato!
 [![Gmail Badge](https://img.shields.io/badge/-lais.brum@acad.ufsm.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lais.brum@acad.ufsm.br)](mailto:lais.brum@acad.ufsm.br)
 
 ## [Licença](#licença)
-Este projeto está sob a licença do GPL-3.0, e pode ser usado por qualquer pessoa! Consulte a LICENÇA 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/5e58c8014d30dfc414e16a3f3cf55f8472f37b0e/LICENSE) para obter mais informações.
+Este projeto está sob a licença do GPL-3.0, e pode ser usado por qualquer pessoa!
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/5e58c8014d30dfc414e16a3f3cf55f8472f37b0e/LICENSE) 
