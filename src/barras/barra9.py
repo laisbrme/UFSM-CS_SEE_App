@@ -5,10 +5,12 @@ from tkinter import *
 def inicia():
 	app = Tk()
 	app.title("Barramento em Anel")
-	#app.iconbitmap('img/ufsm-see.ico')
+	app.iconbitmap('img/ufsm-see.ico')
 
 
 	def finaliza(elem_sel):
+		botao1.pack_forget()
+
 		if elem_sel == 'Trocar D3':
 			newImage = PhotoImage(file='img/bar9/bar9D3g.png')
 			diagrama.configure(image=newImage)
@@ -41,7 +43,7 @@ def inicia():
 					 '--------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D6'))
 		else:
 			telaInt.configure(
 				text='--------------------------------------------------------------\n'
@@ -218,7 +220,7 @@ def inicia():
 					 '--------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D3'))
 		else:
 			telaInt.configure(
 				text='--------------------------------------------------------------\n'

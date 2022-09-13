@@ -4,7 +4,7 @@ from tkinter import *
 def inicio():
     app = Tk()
     app.title("Barramento Duplo com Disjuntor Duplo")
-    #app.iconbitmap('img/ufsm-see.ico')
+    app.iconbitmap('img/ufsm-see.ico')
 
 
     def finaliza(elem_sel):

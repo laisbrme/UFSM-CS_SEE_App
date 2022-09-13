@@ -1,12 +1,10 @@
 from tkinter import ttk
 from tkinter import *
 
-
-
 def inicio():
     app = Tk()
     app.title("Barramento Simples")
-    #app.iconbitmap('img/ufsm-see.ico')
+    app.iconbitmap('img/ufsm-see.ico')
     
     
     def finaliza(elem_sel):

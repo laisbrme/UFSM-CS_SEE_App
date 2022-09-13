@@ -5,57 +5,59 @@ from tkinter import *
 def inicia():
 	app = Tk()
 	app.title("Duplo Barramento Simples com Geração Auxiliar")
-	#app.iconbitmap('img/ufsm-see.ico')
+	app.iconbitmap('img/ufsm-see.ico')
 
 
 	def finaliza(elem_sel):
+		botao1.pack_forget()
+
 		if elem_sel == 'Trocar D2':
 			newImage = PhotoImage(file='img/bar4/bar4D2e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D2 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 
 		elif elem_sel == 'Trocar D3':
 			newImage = PhotoImage(file='img/bar4/bar4D3e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D3 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 
-        elif elem_sel == 'Trocar D4':
+		elif elem_sel == 'Trocar D4':
 			newImage = PhotoImage(file='img/bar4/bar4D4e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D4 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 
 		elif elem_sel == 'Trocar D5':
 			newImage = PhotoImage(file='img/bar4/bar4D5e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D5 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 
 		elif elem_sel == 'Trocar D6':
 			newImage = PhotoImage(file='img/bar4/bar4D6e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D6 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 								   
 		elif elem_sel == 'Trocar D7':
 			newImage = PhotoImage(file='img/bar4/bar4D7e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Manobra em Disjuntor D7 finalizada!\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 
 	def Disj7Passo2():
 		elem_sel = combo.get()
@@ -66,19 +68,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D7 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D7'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj7Passo2()
 
 			
@@ -90,10 +92,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S15 e S16 abertas\n'
 								   'Selecione o próximo passo:\n\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D7',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -115,10 +117,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj7Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj7Passo1()
 
 			
@@ -130,10 +132,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D7 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D7',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -155,10 +157,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj7Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD7()
 
 			
@@ -171,19 +173,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D6 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D6'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj6Passo2()
 
 			
@@ -195,10 +197,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S13 e S14 abertas\n'
 								   'Selecione o próximo passo:\n\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D6',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -220,10 +222,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj6Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj6Passo1()
 
 			
@@ -235,10 +237,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D6 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D6',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -260,10 +262,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj6Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD6()
 
 			
@@ -276,19 +278,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D5 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D5'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj5Passo2()
 
 			
@@ -300,10 +302,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S11 e S12 abertas\n'
 								   'Selecione o próximo passo:\n\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D5',
                                     'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -325,10 +327,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj5Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj5Passo1()
 
 			
@@ -340,10 +342,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D5 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D5',
                                     'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -365,10 +367,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj5Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD5()
 			
 			
@@ -381,19 +383,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D4 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D4'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj4Passo2()
 
 			
@@ -405,10 +407,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S7 e S8 abertas\n'
 								   'Selecione o próximo passo:\n\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
                                     'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -430,10 +432,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj4Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj4Passo1()
 
 			
@@ -445,10 +447,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D4 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
                                     'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -470,10 +472,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj4Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD4()
 
 			
@@ -486,19 +488,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D3 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D3'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj3Passo2()
 
 			
@@ -510,10 +512,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S5 e S6 abertas\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D3',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -535,10 +537,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj3Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj3Passo1()
 
 			
@@ -550,10 +552,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D3 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D2',
 									'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -575,10 +577,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj3Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD3()
 
 
@@ -591,19 +593,19 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Disjuntor D2 trocado\n\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D2'))
 		else:
 			telaInt.configure(
-				text='--------------------------------------------------------------\n'
+				text='------------------------------------------------------------------------\n'
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
-					 '--------------------------------------------------------------')
+					 '------------------------------------------------------------------------')
 			Disj2Passo2()
 
 			
@@ -615,10 +617,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S3 e S4 abertas\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D2',
                                     'Abrir S1-S2',
                                     'Fechar S3-S4',
@@ -640,10 +642,10 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj2Passo2())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			Disj2Passo1()
 
 			
@@ -655,10 +657,10 @@ def inicia():
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D2 desligado\n\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D2',
                                     'Abrir S1-S2',
                                     'Abrir S3-S4',
@@ -680,20 +682,20 @@ def inicia():
 
 			botao1.configure(command=lambda: Disj2Passo1())
 		else:
-			telaInt.configure(text='--------------------------------------------------------------\n'
+			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
 								   'Selecione o próximo passo:\n'
-								   '--------------------------------------------------------------')
+								   '------------------------------------------------------------------------')
 			analiseD2()
 
 			
 	def selectFalha():
 		elem_sel = combo.get()
 		elem_falha = elem_sel
-		telaInt.configure(text='--------------------------------------------------------------\n'
+		telaInt.configure(text='------------------------------------------------------------------------\n'
 							   'Falha no ' + elem_falha + '\n\n'
 							   'Selecione o próximo passo:\n'
-							   '--------------------------------------------------------------')
+							   '------------------------------------------------------------------------')
 		combo.configure(values=['Abrir S1-S2',
 								'Abrir S3-S4',
                                 'Abrir S5-S6',
@@ -728,7 +730,7 @@ def inicia():
 
 			botao1.configure(command=lambda: analiseD3())
             
-        elif elem_sel == 'Disjuntor D4':
+		elif elem_sel == 'Disjuntor D4':
 			newImage = PhotoImage(file='img/bar4/bar4D4a.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
@@ -777,10 +779,10 @@ def inicia():
 
 	# Criação Tela Interativa
 	telaInt = Label(subcontainer1,
-					text='--------------------------------------------------------------\n'
+					text='------------------------------------------------------------------------\n'
 						 'Duplo Barramento Simples com Geração Auxiliar\n\n'
 						 'Defina o elemento com falha!\n'
-						 '--------------------------------------------------------------',
+						 '------------------------------------------------------------------------',
 					font='times 14 bold',
 					justify='center',
 					bg="#dde")

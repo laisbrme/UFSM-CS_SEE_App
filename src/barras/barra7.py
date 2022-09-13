@@ -4,10 +4,12 @@ from tkinter import *
 def inicio():
     app = Tk()
     app.title("Barramento Duplo com Disjuntor e Meio")
-    # app.iconbitmap('img/ufsm-see.ico')
+    app.iconbitmap('img/ufsm-see.ico')
 
 
     def finaliza(elem_sel):
+        botao1.pack_forget()
+
         if elem_sel == 'Trocar D2':
             newImage = PhotoImage(file='img/bar7/bar7D2.png')
             diagrama.configure(image=newImage)
@@ -57,7 +59,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar', command=lambda: finaliza(elem_sel))
+            botao1.configure(text='Finalizar Manobra', command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
                 text='------------------------------------------------------------------------\n'
@@ -67,19 +69,19 @@ def inicio():
             Disj5Passo6()
 
 			
-	def	Disj5Passo5():
-		elem_sel = combo.get()
+    def	Disj5Passo5():
+        elem_sel = combo.get()
 
         if elem_sel == 'Abrir S9-S10':
-			newImage = PhotoImage(file='img/bar7/bar7D5g.png')
+            newImage = PhotoImage(file='img/bar7/bar7D5g.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S9 e S10 abertas\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D5',
+            combo.configure(values=['Trocar D5',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -96,7 +98,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj5Passo6())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -104,19 +106,19 @@ def inicio():
             Disj5Passo5()
 			
 			
-	def	Disj5Passo4():
-		elem_sel = combo.get()
+    def	Disj5Passo4():
+        elem_sel = combo.get()
 
         if elem_sel == 'Desligar D5':
-			newImage = PhotoImage(file='img/bar7/bar7D5f.png')
+            newImage = PhotoImage(file='img/bar7/bar7D5f.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D5 desligado\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D5',
+            combo.configure(values=['Trocar D5',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -133,7 +135,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj5Passo5())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -141,24 +143,24 @@ def inicio():
             Disj5Passo4()
 			
 			
-	def	Disj5Passo3():
-		elem_sel = combo.get()
+    def	Disj5Passo3():
+        elem_sel = combo.get()
 
         if elem_sel == 'Ligar D6' or 'Ligar D7':
-			newImage = PhotoImage(file='img/bar7/bar7D5e.png')
+            newImage = PhotoImage(file='img/bar7/bar7D5e.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
-			if elem_sel == 'Ligar D6' 
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            if elem_sel == 'Ligar D6':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D6 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			elif elem_sel == 'Ligar D7':
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            elif elem_sel == 'Ligar D7':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D7 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D5',
+            combo.configure(values=['Trocar D5',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -175,7 +177,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj5Passo4())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -238,7 +240,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj5Passo3())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -249,7 +251,7 @@ def inicio():
     def Disj5Passo1a():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D6':
+        if elem_sel == 'Ligar D6':
             newImage = PhotoImage(file='img/bar7/bar7D5c1.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -275,7 +277,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj5Passo2())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -286,7 +288,7 @@ def inicio():
     def Disj5Passo1b():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D7':
+        if elem_sel == 'Ligar D7':
             newImage = PhotoImage(file='img/bar7/bar7D5c2.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -396,7 +398,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar', command=lambda: finaliza(elem_sel))
+            botao1.configure(text='Finalizar Manobra', command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
                 text='------------------------------------------------------------------------\n'
@@ -406,19 +408,19 @@ def inicio():
             Disj4Passo6()
 
 			
-	def	Disj4Passo5():
-		elem_sel = combo.get()
+    def	Disj4Passo5():
+        elem_sel = combo.get()
 
         if elem_sel == 'Abrir S7-S8':
-			newImage = PhotoImage(file='img/bar7/bar7D4g.png')
+            newImage = PhotoImage(file='img/bar7/bar7D4g.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S7 e S8 abertas\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D4',
+            combo.configure(values=['Trocar D4',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Fechar S7-S8',
@@ -435,7 +437,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj4Passo6())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -443,19 +445,19 @@ def inicio():
             Disj4Passo5()
 			
 			
-	def	Disj4Passo4():
-		elem_sel = combo.get()
+    def	Disj4Passo4():
+        elem_sel = combo.get()
 
         if elem_sel == 'Desligar D4':
-			newImage = PhotoImage(file='img/bar7/bar7D4f.png')
+            newImage = PhotoImage(file='img/bar7/bar7D4f.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D4 desligado\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D4',
+            combo.configure(values=['Trocar D4',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -472,7 +474,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj4Passo5())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -480,24 +482,24 @@ def inicio():
             Disj4Passo4()
 			
 			
-	def	Disj4Passo3():
-		elem_sel = combo.get()
+    def	Disj4Passo3():
+        elem_sel = combo.get()
 
         if elem_sel == 'Ligar D6' or 'Ligar D7':
-			newImage = PhotoImage(file='img/bar7/bar7D4e.png')
+            newImage = PhotoImage(file='img/bar7/bar7D4e.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
-			if elem_sel == 'Ligar D6' 
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            if elem_sel == 'Ligar D6':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D6 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			elif elem_sel == 'Ligar D7':
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            elif elem_sel == 'Ligar D7':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D7 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D4',
+            combo.configure(values=['Trocar D4',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -514,7 +516,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj4Passo4())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -577,7 +579,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj4Passo3())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -588,7 +590,7 @@ def inicio():
     def Disj4Passo1a():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D6':
+        if elem_sel == 'Ligar D6':
             newImage = PhotoImage(file='img/bar7/bar7D4c1.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -614,7 +616,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj4Passo2())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -625,7 +627,7 @@ def inicio():
     def Disj4Passo1b():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D7':
+        if elem_sel == 'Ligar D7':
             newImage = PhotoImage(file='img/bar7/bar7D4c2.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -735,7 +737,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar', command=lambda: finaliza(elem_sel))
+            botao1.configure(text='Finalizar Manobra', command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
                 text='------------------------------------------------------------------------\n'
@@ -745,19 +747,19 @@ def inicio():
             Disj3Passo6()
 
 			
-	def	Disj3Passo5():
-		elem_sel = combo.get()
+    def	Disj3Passo5():
+        elem_sel = combo.get()
 
         if elem_sel == 'Abrir S5-S6':
-			newImage = PhotoImage(file='img/bar7/bar7D3g.png')
+            newImage = PhotoImage(file='img/bar7/bar7D3g.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S5 e S6 abertas\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D3',
+            combo.configure(values=['Trocar D3',
 									'Abrir S3-S4',
 									'Fechar S5-S6',
 									'Abrir S7-S8',
@@ -774,7 +776,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj3Passo6())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -782,19 +784,19 @@ def inicio():
             Disj3Passo5()
 			
 			
-	def	Disj3Passo4():
-		elem_sel = combo.get()
+    def	Disj3Passo4():
+        elem_sel = combo.get()
 
         if elem_sel == 'Desligar D3':
-			newImage = PhotoImage(file='img/bar7/bar7D3f.png')
+            newImage = PhotoImage(file='img/bar7/bar7D3f.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D3 desligado\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D3',
+            combo.configure(values=['Trocar D3',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -811,7 +813,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj3Passo5())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -819,24 +821,24 @@ def inicio():
             Disj3Passo4()
 			
 			
-	def	Disj3Passo3():
-		elem_sel = combo.get()
+    def	Disj3Passo3():
+        elem_sel = combo.get()
 
         if elem_sel == 'Ligar D6' or 'Ligar D7':
-			newImage = PhotoImage(file='img/bar7/bar7D3e.png')
+            newImage = PhotoImage(file='img/bar7/bar7D3e.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
-			if elem_sel == 'Ligar D6' 
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            if elem_sel == 'Ligar D6':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D6 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			elif elem_sel == 'Ligar D7':
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            elif elem_sel == 'Ligar D7':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D7 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D3',
+            combo.configure(values=['Trocar D3',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -853,7 +855,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj3Passo4())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -916,7 +918,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj3Passo3())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -927,7 +929,7 @@ def inicio():
     def Disj3Passo1a():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D6':
+        if elem_sel == 'Ligar D6':
             newImage = PhotoImage(file='img/bar7/bar7D3c1.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -953,7 +955,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj3Passo2())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -964,7 +966,7 @@ def inicio():
     def Disj3Passo1b():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D7':
+        if elem_sel == 'Ligar D7':
             newImage = PhotoImage(file='img/bar7/bar7D3c2.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -1074,7 +1076,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar', command=lambda: finaliza(elem_sel))
+            botao1.configure(text='Finalizar Manobra', command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
                 text='------------------------------------------------------------------------\n'
@@ -1084,19 +1086,19 @@ def inicio():
             Disj2Passo6()
 
 			
-	def	Disj3Passo5():
-		elem_sel = combo.get()
+    def	Disj3Passo5():
+        elem_sel = combo.get()
 
         if elem_sel == 'Abrir S3-S4':
-			newImage = PhotoImage(file='img/bar7/bar7D2g.png')
+            newImage = PhotoImage(file='img/bar7/bar7D2g.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seccionadoras S3 e S4 abertas\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D2',
+            combo.configure(values=['Trocar D2',
 									'Fechar S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -1113,7 +1115,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj2Passo6())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -1121,19 +1123,19 @@ def inicio():
             Disj2Passo5()
 			
 			
-	def	Disj3Passo4():
-		elem_sel = combo.get()
+    def	Disj3Passo4():
+        elem_sel = combo.get()
 
         if elem_sel == 'Desligar D2':
-			newImage = PhotoImage(file='img/bar7/bar7D2f.png')
+            newImage = PhotoImage(file='img/bar7/bar7D2f.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
 
-			telaInt.configure(text='------------------------------------------------------------------------\n'
+            telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Disjuntor D2 desligado\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D2',
+            combo.configure(values=['Trocar D2',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -1150,7 +1152,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj2Passo5())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -1158,24 +1160,24 @@ def inicio():
             Disj2Passo4()
 			
 			
-	def	Disj3Passo3():
-		elem_sel = combo.get()
+    def	Disj3Passo3():
+        elem_sel = combo.get()
 
         if elem_sel == 'Ligar D6' or 'Ligar D7':
-			newImage = PhotoImage(file='img/bar7/bar7D2e.png')
+            newImage = PhotoImage(file='img/bar7/bar7D2e.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
-			if elem_sel == 'Ligar D6' 
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            if elem_sel == 'Ligar D6':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D6 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			elif elem_sel == 'Ligar D7':
-				telaInt.configure(text='------------------------------------------------------------------------\n'
+            elif elem_sel == 'Ligar D7':
+                telaInt.configure(text='------------------------------------------------------------------------\n'
 									   'Disjuntor D7 ligado\n'
 									   'Selecione o próximo passo:\n'
 									   '------------------------------------------------------------------------')
-			combo.configure(values=['Trocar D2',
+            combo.configure(values=['Trocar D2',
 									'Abrir S3-S4',
 									'Abrir S5-S6',
 									'Abrir S7-S8',
@@ -1192,7 +1194,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj2Passo4())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -1255,7 +1257,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj2Passo3())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -1266,7 +1268,7 @@ def inicio():
     def Disj2Passo1a():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D6':
+        if elem_sel == 'Ligar D6':
             newImage = PhotoImage(file='img/bar7/bar7D2c1.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
@@ -1292,7 +1294,7 @@ def inicio():
 
             botao1.configure(command=lambda: Disj2Passo2())
 			
-		else:
+        else:
             telaInt.configure(text='------------------------------------------------------------------------\n'
                                    'Seleção inválida!\n'
                                    'Selecione o próximo passo:\n'
@@ -1303,7 +1305,7 @@ def inicio():
     def Disj2Passo1b():
         elem_sel = combo.get()
 
-		if elem_sel == 'Ligar D7':
+        if elem_sel == 'Ligar D7':
             newImage = PhotoImage(file='img/bar7/bar7D2c2.png')
             diagrama.configure(image=newImage)
             diagrama.image = newImage
