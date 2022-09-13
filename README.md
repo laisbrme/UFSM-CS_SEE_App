@@ -30,8 +30,8 @@ Em desenvolvimento...
 9. Barramento em Anel (Completo)
 
 ## [Modificações Futuras concluídos:](#modificacoes-futuras)
+- Implementação do menu "Arquivos"
 - Implementar botão para reiniciar a manobra;
-- 
 - Adicionar arranjo BD+T- 3-4Ch;
 
 
