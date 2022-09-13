@@ -28,7 +28,7 @@ def inicia():
 								   '------------------------------------------------------------------------')
 
 		elif elem_sel == 'Trocar D4':
-			newImage = PhotoImage(file='img/bar4/bar4D4e.png')
+			newImage = PhotoImage(file='img/bar4/bar4D4g.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 			telaInt.configure(text='------------------------------------------------------------------------\n'
@@ -374,11 +374,11 @@ def inicia():
 			analiseD5()
 			
 			
-	def Disj4Passo2():
+	def Disj4Passo4():
 		elem_sel = combo.get()
 
 		if elem_sel == 'Trocar D4':
-			newImage = PhotoImage(file='img/bar4/bar4D4d.png')
+			newImage = PhotoImage(file='img/bar4/bar4D4f.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
@@ -396,14 +396,14 @@ def inicia():
 					 'Seleção inválida!\n'
 					 'Selecione o próximo passo:\n'
 					 '------------------------------------------------------------------------')
-			Disj4Passo2()
+			Disj4Passo4()
 
 			
-	def Disj4Passo1():
+	def Disj4Passo3():
 		elem_sel = combo.get()
 
 		if elem_sel == 'Abrir S7-S8':
-			newImage = PhotoImage(file='img/bar4/bar4D4c.png')
+			newImage = PhotoImage(file='img/bar4/bar4D4e.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
@@ -419,12 +419,92 @@ def inicia():
                                     'Abrir S11-S12',
                                     'Abrir S13-S14',
                                     'Abrir S15-S16',
-                                    'Fechar S9-S10',
-                                    'Ligar DG',
+                                    'Abrir S9-S10',
+                                    'Desligar DG',
                                     'Desligar D1',
                                     'Desligar D2',
                                     'Desligar D3',
                                     'Ligar D4',
+                                    'Desligar D5',
+                                    'Desligar D6',
+                                    'Desligar D7',])
+			combo.set('')
+
+			botao1.configure(command=lambda: Disj4Passo4())
+		else:
+			telaInt.configure(text='------------------------------------------------------------------------\n'
+								   'Seleção inválida!\n'
+								   'Selecione o próximo passo:\n'
+								   '------------------------------------------------------------------------')
+			Disj4Passo3()
+
+			
+	def Disj4Passo2():
+		elem_sel = combo.get()
+
+		if elem_sel == 'Desligar D4':
+			newImage = PhotoImage(file='img/bar4/bar4D4d.png')
+			diagrama.configure(image=newImage)
+			diagrama.image = newImage
+
+			telaInt.configure(text='------------------------------------------------------------------------\n'
+								   'Disjuntor D4 desligado\n'
+								   'Selecione o próximo passo:\n\n'
+								   '------------------------------------------------------------------------')
+			combo.configure(values=['Trocar D4',
+                                    'Abrir S1-S2',
+                                    'Abrir S3-S4',
+                                    'Abrir S5-S6',
+                                    'Abrir S7-S8',
+                                    'Abrir S11-S12',
+                                    'Abrir S13-S14',
+                                    'Abrir S15-S16',
+                                    'Abrir S9-S10',
+                                    'Desligar DG',
+                                    'Desligar D1',
+                                    'Desligar D2',
+                                    'Desligar D3',
+                                    'Ligar D4',
+                                    'Desligar D5',
+                                    'Desligar D6',
+                                    'Desligar D7',])
+			combo.set('')
+
+			botao1.configure(command=lambda: Disj4Passo3())
+		else:
+			telaInt.configure(text='------------------------------------------------------------------------\n'
+								   'Seleção inválida!\n'
+								   'Selecione o próximo passo:\n'
+								   '------------------------------------------------------------------------')
+			Disj4Passo2()
+
+			
+	def Disj4Passo1():
+		elem_sel = combo.get()
+
+		if elem_sel == 'Ligar DG':
+			newImage = PhotoImage(file='img/bar4/bar4D4c.png')
+			diagrama.configure(image=newImage)
+			diagrama.image = newImage
+
+			telaInt.configure(text='------------------------------------------------------------------------\n'
+								   'Disjuntor DG ligado\n'
+								   'Selecione o próximo passo:\n\n'
+								   '------------------------------------------------------------------------')
+			combo.configure(values=['Trocar D4',
+                                    'Abrir S1-S2',
+                                    'Abrir S3-S4',
+                                    'Abrir S5-S6',
+                                    'Abrir S7-S8',
+                                    'Abrir S11-S12',
+                                    'Abrir S13-S14',
+                                    'Abrir S15-S16',
+                                    'Abrir S9-S10',
+                                    'Desligar DG',
+                                    'Desligar D1',
+                                    'Desligar D2',
+                                    'Desligar D3',
+                                    'Desligar D4',
                                     'Desligar D5',
                                     'Desligar D6',
                                     'Desligar D7',])
@@ -442,13 +522,13 @@ def inicia():
 	def analiseD4():
 		elem_sel = combo.get()
 
-		if elem_sel == 'Desligar D4':
+		if elem_sel == 'Fechar S9-S10':
 			newImage = PhotoImage(file='img/bar4/bar4D4b.png')
 			diagrama.configure(image=newImage)
 			diagrama.image = newImage
 
 			telaInt.configure(text='------------------------------------------------------------------------\n'
-								   'Disjuntor D4 desligado\n\n'
+								   'Seccionadoras S9 e S10 fechadas\n\n'
 								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
@@ -459,12 +539,12 @@ def inicia():
                                     'Abrir S11-S12',
                                     'Abrir S13-S14',
                                     'Abrir S15-S16',
-                                    'Fechar S9-S10',
+                                    'Abrir S9-S10',
                                     'Ligar DG',
                                     'Desligar D1',
                                     'Desligar D2',
                                     'Desligar D3',
-                                    'Ligar D4',
+                                    'Desligar D4',
                                     'Desligar D5',
                                     'Desligar D6',
                                     'Desligar D7',])
