@@ -408,8 +408,8 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(text='------------------------------------------------------------------------\n'
-								   'Seccionadoras S7 e S8 abertas\n'
-								   'Selecione o próximo passo:\n\n'
+								   'Seccionadoras S7 e S8 abertas\n\n'
+								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
                                     'Abrir S1-S2',
@@ -448,8 +448,8 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(text='------------------------------------------------------------------------\n'
-								   'Disjuntor D4 desligado\n'
-								   'Selecione o próximo passo:\n\n'
+								   'Disjuntor D4 desligado\n\n'
+								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
                                     'Abrir S1-S2',
@@ -488,8 +488,8 @@ def inicia():
 			diagrama.image = newImage
 
 			telaInt.configure(text='------------------------------------------------------------------------\n'
-								   'Disjuntor DG ligado\n'
-								   'Selecione o próximo passo:\n\n'
+								   'Disjuntor DG ligado\n\n'
+								   'Selecione o próximo passo:\n'
 								   '------------------------------------------------------------------------')
 			combo.configure(values=['Trocar D4',
                                     'Abrir S1-S2',

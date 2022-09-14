@@ -8,6 +8,8 @@ def inicio():
 
 
     def finaliza(elem_sel):
+        botao1.pack_forget()
+
         if elem_sel == 'Trocar D2':
             newImage = PhotoImage(file='img/bar8/bar8D2i.png')
             diagrama.configure(image=newImage)
@@ -73,7 +75,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
@@ -448,7 +450,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
@@ -823,7 +825,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
@@ -1198,7 +1200,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
@@ -1573,7 +1575,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
@@ -1948,7 +1950,7 @@ def inicio():
                      'Selecione o próximo passo:\n'
                      '------------------------------------------------------------------------')
             combo.pack_forget()
-            botao1.configure(text='Finalizar',
+            botao1.configure(text='Finalizar Manobra',
                              command=lambda: finaliza(elem_sel))
         else:
             telaInt.configure(
