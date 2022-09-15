@@ -33,6 +33,7 @@ Em desenvolvimento...
 - Implementação do menu "Arquivos"
 - Implementar botão para reiniciar a manobra;
 - Adicionar arranjo BD+T- 3-4Ch;
+- Suporte a vários sistemas operacionais (com suporte 32 bits e 64 bits)
 
 
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
