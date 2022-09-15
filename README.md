@@ -7,7 +7,7 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Tabela de Conteúdo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
    * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
-   * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
+   * [Modificações Futuras:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
    * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuario)
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-desenvolvedores)
    * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias-utilizadas)
@@ -29,7 +29,7 @@ Em desenvolvimento...
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
 9. Barramento em Anel (Completo)
 
-## [Modificações Futuras concluídos:](#modificacoes-futuras)
+## [Modificações Futuras:](#modificacoes-futuras)
 - Implementação do menu "Arquivos"
 - Implementar botão para reiniciar a manobra;
 - Adicionar arranjo BD+T- 3-4Ch;
