@@ -38,8 +38,7 @@ Em desenvolvimento...
 
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
 - Sistema Operacional Windows 64 bits.
-- Para uma boa visualização, utilizar em computadores com resolução Full HD (1920 x 1080 px
-).
+- Monitor Full HD (1920 x 1080 px).
 
 
 ## [Pre Requisitos para desenvolvedores](#pre-requisitos-para-desenvolvedores)
