@@ -51,7 +51,7 @@ def inicia():
 					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D5'))
 		else:
 			telaInt.configure(
 				text='------------------------------------------------------------------------\n'
@@ -103,7 +103,7 @@ def inicia():
 									'Ligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj5Passo6())
+			botao1.configure(command=lambda: Disj5Passo3())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -160,7 +160,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj5Passo5())
+			botao1.configure(command=lambda: Disj5Passo6())
             
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
@@ -305,7 +305,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj5Passo3())
+			botao1.configure(command=lambda: Disj5Passo5())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -431,7 +431,7 @@ def inicia():
 					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D4'))
 		else:
 			telaInt.configure(
 				text='------------------------------------------------------------------------\n'
@@ -483,7 +483,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj4Passo6())
+			botao1.configure(command=lambda: Disj4Passo3())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -540,7 +540,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj4Passo5())
+			botao1.configure(command=lambda: Disj4Passo6())
             
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
@@ -685,7 +685,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj4Passo3())
+			botao1.configure(command=lambda: Disj4Passo5())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -811,7 +811,7 @@ def inicia():
 					 '------------------------------------------------------------------------')
 			combo.pack_forget()
 			
-			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza())
+			botao1.configure(text='Finalizar Manobra', command=lambda: finaliza('Trocar D3'))
 		else:
 			telaInt.configure(
 				text='------------------------------------------------------------------------\n'
@@ -838,8 +838,8 @@ def inicia():
 									'Abrir S2',
 									'Abrir S5',
 									'Abrir S6',
-									'Fechar S11',
-									'Fechar S12',
+									'Abrir S11',
+									'Abrir S12',
 									'Abrir S15',
 									'Abrir S16',
 									'Abrir S19',
@@ -863,7 +863,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj3Passo6())
+			botao1.configure(command=lambda: Disj3Passo3())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -920,7 +920,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj3Passo5())
+			botao1.configure(command=lambda: Disj3Passo6())
             
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
@@ -967,7 +967,7 @@ def inicia():
 									'Desligar DT',
 									'Desligar D1',
 									'Desligar D2',
-									'Desligar D3',
+									'Ligar D3',
 									'Desligar D4',
 									'Desligar D5',])
 			combo.set('')
@@ -1008,7 +1008,7 @@ def inicia():
 									'Desligar DT',
 									'Desligar D1',
 									'Desligar D2',
-									'Desligar D3',
+									'Ligar D3',
 									'Desligar D4',
 									'Desligar D5',])
 			combo.set('')
@@ -1065,7 +1065,7 @@ def inicia():
 									'Desligar D5',])
 			combo.set('')
 
-			botao1.configure(command=lambda: Disj3Passo3())
+			botao1.configure(command=lambda: Disj3Passo5())
 		else:
 			telaInt.configure(text='------------------------------------------------------------------------\n'
 								   'Seleção inválida!\n'
@@ -1102,7 +1102,7 @@ def inicia():
 									'Fechar S7',
 									'Fechar S8',
 									'Fechar S13',
-									'Abrir S14',
+									'Fechar S14',
 									'Fechar S17',
 									'Fechar S18',
 									'Fechar S21',
@@ -1153,7 +1153,7 @@ def inicia():
 									'Fechar S7',
 									'Fechar S8',
 									'Fechar S13',
-									'Abrir S14',
+									'Fechar S14',
 									'Fechar S17',
 									'Fechar S18',
 									'Fechar S21',
@@ -1198,7 +1198,7 @@ def inicia():
 								'Fechar S7',
 								'Fechar S8',
 								'Fechar S13',
-								'Abrir S14',
+								'Fechar S14',
 								'Fechar S17',
 								'Fechar S18',
 								'Fechar S21',
