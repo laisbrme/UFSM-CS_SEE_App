@@ -25,7 +25,7 @@ Em desenvolvimento...
 4. Duplo Barramento Simples com Geração Auxiliar (Completo)
 5. Barramento Duplo com Disjuntor a Quatro Chaves (Rever código)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
-7. Barramento Duplo com Disjuntor e Meio (Rever código)
+7. Barramento Duplo com Disjuntor e Meio (Completo)
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
 9. Barramento em Anel (Completo)
 
