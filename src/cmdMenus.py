@@ -17,9 +17,7 @@ class barraMenu:
         menuBar = Menu(toplevel)
         menu1 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Arquivos", menu=menu1)
-        menu1.add_command(label="Novo", command=CJF.semComando)
-        menu1.add_command(label="Abrir", command=CJF.semComando)
-        menu1.add_command(label="Salvar", command=CJF.semComando)
+        menu1.add_command(label="Abrir pasta de LOGs", command=CJF.openLOG)
         menu1.add_separator()
         menu1.add_command(label="Fechar", command=toplevel.destroy)
 
@@ -32,7 +30,8 @@ class barraMenu:
         menu2.add_cascade(label="5. Barramento Duplo com Disjuntor a Quatro Chaves", command=CJM.AbrirBar5)
         menu2.add_cascade(label="6. Barramento Duplo com Disjuntor Duplo", command=CJM.AbrirBar6)
         menu2.add_cascade(label="7. Barramento Duplo com Disjuntor e Meio", command=CJM.AbrirBar7)
-        menu2.add_cascade(label="8. Barramento em Anel", command=CJM.AbrirBar8)
+        menu2.add_cascade(label="8. Barramento Duplo com Disjuntor e Um Terço", command=CJM.AbrirBar8)
+        menu2.add_cascade(label="9. Barramento em Anel", command=CJM.AbrirBar9)
 
         menu3 = Menu(menuBar, tearoff=0)
         menuBar.add_cascade(label="Ajuda", menu=menu3)
