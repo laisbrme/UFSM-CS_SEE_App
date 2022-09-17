@@ -4,7 +4,6 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
 ## [Tabela de Conteúdo](#tabela-de-conteúdo)
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
-   * [Tabela de Conteúdo](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tabela-de-conteudo)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
    * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
    * [Modificações Futuras:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
@@ -12,7 +11,7 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-desenvolvedores)
    * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias-utilizadas)
    * [Autora](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#autora)
-   * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licença)
+   * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licenca)
 <!--te-->
 
 ## [Status do Projeto:](#status-do-projeto)
@@ -23,7 +22,7 @@ Em desenvolvimento...
 2. Barramento Principal com Barra de Transferência (Completo)
 3. Barramento Principal com Seccionamento de Barra (Completo)
 4. Duplo Barramento Simples com Geração Auxiliar (Completo)
-5. Barramento Duplo com Disjuntor a Quatro Chaves (Rever código)
+5. Barramento Duplo com Disjuntor a Quatro Chaves (Completo)
 6. Barramento Duplo com Disjuntor Duplo (Completo)
 7. Barramento Duplo com Disjuntor e Meio (Completo)
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
@@ -61,7 +60,7 @@ Feito por Laís Brum Menezes. Entre em contato!
 
 [![Gmail Badge](https://img.shields.io/badge/-lais.brum@acad.ufsm.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lais.brum@acad.ufsm.br)](mailto:lais.brum@acad.ufsm.br)
 
-## [Licença](#licença)
+## [Licença](#licenca)
 Este projeto está sob a licença do GNU LGPL v3
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/5e58c8014d30dfc414e16a3f3cf55f8472f37b0e/LICENSE) 

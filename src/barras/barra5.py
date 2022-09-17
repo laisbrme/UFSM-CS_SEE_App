@@ -82,8 +82,8 @@ def inicia():
 									'Abrir S12',
 									'Abrir S15',
 									'Abrir S16',
-									'Fechar S19',
-									'Fechar S20',
+									'Abrir S19',
+									'Abrir S20',
 									'Fechar S3',
 									'Fechar S4',
 									'Fechar S7',
@@ -157,7 +157,7 @@ def inicia():
 									'Desligar D2',
 									'Desligar D3',
 									'Desligar D4',
-									'Desligar D5',])
+									'Ligar D5',])
 			combo.set('')
 
 			botao1.configure(command=lambda: Disj5Passo6())
@@ -209,7 +209,7 @@ def inicia():
 									'Desligar D2',
 									'Desligar D3',
 									'Desligar D4',
-									'Desligar D5',])
+									'Ligar D5',])
 			combo.set('')
 
 			botao1.configure(command=lambda: Disj5Passo4())
@@ -250,7 +250,7 @@ def inicia():
 									'Desligar D2',
 									'Desligar D3',
 									'Desligar D4',
-									'Desligar D5',])
+									'Ligar D5',])
 			combo.set('')
 
 			botao1.configure(command=lambda: Disj5Passo4())
@@ -460,8 +460,8 @@ def inicia():
 									'Abrir S6',
 									'Abrir S11',
 									'Abrir S12',
-									'Fechar S15',
-									'Fechar S16',
+									'Abrir S15',
+									'Abrir S16',
 									'Abrir S19',
 									'Abrir S20',
 									'Fechar S3',
@@ -536,7 +536,7 @@ def inicia():
 									'Desligar D1',
 									'Desligar D2',
 									'Desligar D3',
-									'Desligar D4',
+									'Ligar D4',
 									'Desligar D5',])
 			combo.set('')
 
@@ -588,7 +588,7 @@ def inicia():
 									'Desligar D1',
 									'Desligar D2',
 									'Desligar D3',
-									'Desligar D4',
+									'Ligar D4',
 									'Desligar D5',])
 			combo.set('')
 
@@ -629,7 +629,7 @@ def inicia():
 									'Desligar D1',
 									'Desligar D2',
 									'Desligar D3',
-									'Desligar D4',
+									'Ligar D4',
 									'Desligar D5',])
 			combo.set('')
 
