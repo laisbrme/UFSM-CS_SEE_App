@@ -2,7 +2,7 @@
 Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
 
 
-## [Tabela de Conteúdo](#tabela-de-conteúdo)
+## [Tabela de Conteúdo](#tabela-de-conteudo)
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
