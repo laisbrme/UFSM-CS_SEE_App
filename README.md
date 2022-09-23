@@ -7,8 +7,8 @@ Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do 
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
    * [Obter o app](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#obterApp)
-   * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
-   * [Modificações Futuras:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
+   * [Barramentos Concluídos](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
+   * [Modificações Futuras](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
    * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuario)
    * [Pre Requisitos para desenvolvedores](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-desenvolvedores)
    * [Tecnologias utilizadas](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#tecnologias-utilizadas)
@@ -17,17 +17,17 @@ Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do 
 <!--te-->
 
 
-## [Status do Projeto:](#status-do-projeto)
+## [Status do Projeto](#status-do-projeto)
 Em desenvolvimento...
 
 
-## [Obter o app:](#obterApp)
+## [Obter o app](#obterApp)
 - Windows: 
   - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_720p.exe) 
   - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_1080p.exe)
 
 
-## [Barramentos Concluídos:](#barramentos-concluidos)
+## [Barramentos Concluídos](#barramentos-concluidos)
 1. Barramento Simples (Completo)
 2. Barramento Principal com Barra de Transferência (Completo)
 3. Barramento Principal com Seccionamento de Barra (Completo)
@@ -39,7 +39,7 @@ Em desenvolvimento...
 9. Barramento em Anel (Completo)
 
 
-## [Modificações Futuras:](#modificacoes-futuras)
+## [Modificações Futuras](#modificacoes-futuras)
 - Implementar botão para reiniciar a manobra;
 - Implementar LOG das manobras;
 - Adicionar arranjo BD+T- 3-4Ch;
