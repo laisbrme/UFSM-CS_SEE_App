@@ -1,10 +1,12 @@
 # [UFSM-CS_SEE_App](#UFSM-CS_SEE_App)
-Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
+Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
+
 
 ## [Tabela de Conteúdo](#tabela-de-conteúdo)
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
+   * [Obter o app](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#obterApp)
    * [Barramentos Concluídos:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#barramentos-concluidos)
    * [Modificações Futuras:](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#modificacoes-futuras)
    * [Pre Requisitos para usuários](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#pre-requisitos-para-usuario)
@@ -14,8 +16,16 @@ Aplicação de auxílio na disciplica de Subestações de Energia Elétrica, do 
    * [Licença](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#licenca)
 <!--te-->
 
+
 ## [Status do Projeto:](#status-do-projeto)
 Em desenvolvimento...
+
+
+## [Obter o app:](#obterApp)
+- Windows: 
+  - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_720p.exe) 
+  - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_1080p.exe)
+
 
 ## [Barramentos Concluídos:](#barramentos-concluidos)
 1. Barramento Simples (Completo)
@@ -28,16 +38,16 @@ Em desenvolvimento...
 8. Barramento Duplo com Disjuntor e Um Terço (Completo)
 9. Barramento em Anel (Completo)
 
+
 ## [Modificações Futuras:](#modificacoes-futuras)
-- Implementação do menu "Arquivos"
 - Implementar botão para reiniciar a manobra;
+- Implementar LOG das manobras;
 - Adicionar arranjo BD+T- 3-4Ch;
 - Suporte a vários sistemas operacionais (com suporte 32 bits e 64 bits)
 
 
 ## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
 - Sistema Operacional Windows 64 bits.
-- Monitor Full HD (1920 x 1080 px).
 
 
 ## [Pre Requisitos para desenvolvedores](#pre-requisitos-para-desenvolvedores)
