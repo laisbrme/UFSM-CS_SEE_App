@@ -24,6 +24,7 @@ Em desenvolvimento...
 
 ## [Obter o app]<a name="obterApp">
 - Windows: 
+
   - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_720p.exe) 
   - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_1080p.exe)
 
@@ -52,7 +53,7 @@ Em desenvolvimento...
 
 
 ## [Pre Requisitos para desenvolvedores]<a name="pre-requisitos-para-desenvolvedores">
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Antes de começar, você irá precisar ter instalado em sua máquina as seguintes ferramentas:
 [Python](https://www.python.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
 
