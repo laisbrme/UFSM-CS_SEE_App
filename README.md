@@ -1,8 +1,9 @@
-# [UFSM-CS_SEE_App](#UFSM-CS_SEE_App)
+# [UFSM-CS SEE App]<a name="UFSM-CS_SEE_App">
+
 Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
 
 
-## [Tabela de Conteúdo](#tabela-de-conteudo)
+## [Tabela de Conteúdo]<a name="tabela-de-conteudo">
 <!--ts-->
    * [Sobre](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#UFSM-CS_SEE_App)
    * [Status do Projeto](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/main/README.md#status-do-projeto)
@@ -17,17 +18,17 @@ Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do 
 <!--te-->
 
 
-## [Status do Projeto](#status-do-projeto)
+## [Status do Projeto]<a name="status-do-projeto">
 Em desenvolvimento...
 
 
-## [Obter o app](#obterApp)
+## [Obter o app]<a name="obterApp">
 - Windows: 
   - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_720p.exe) 
   - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/versoes/UFSM-CS_SEE_App_1080p.exe)
 
 
-## [Barramentos Concluídos](#barramentos-concluidos)
+## [Barramentos Concluídos]<a name="barramentos-concluidos">
 1. Barramento Simples (Completo)
 2. Barramento Principal com Barra de Transferência (Completo)
 3. Barramento Principal com Seccionamento de Barra (Completo)
@@ -39,24 +40,24 @@ Em desenvolvimento...
 9. Barramento em Anel (Completo)
 
 
-## [Modificações Futuras](#modificacoes-futuras)
+## [Modificações Futuras]<a name="modificacoes-futuras">
 - Implementar botão para reiniciar a manobra;
 - Implementar LOG das manobras;
 - Adicionar arranjo BD+T- 3-4Ch;
 - Suporte a vários sistemas operacionais (com suporte 32 bits e 64 bits)
 
 
-## [Pre Requisitos para usuários](#pre-requisitos-para-usuario)
+## [Pre Requisitos para usuários]<a name="pre-requisitos-para-usuario)">
 - Sistema Operacional Windows 64 bits.
 
 
-## [Pre Requisitos para desenvolvedores](#pre-requisitos-para-desenvolvedores)
+## [Pre Requisitos para desenvolvedores]<a name="pre-requisitos-para-desenvolvedores">
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Python](https://www.python.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
 
 
-## [Tecnologias utilizadas](#tecnologias-utilizadas)
+## [Tecnologias utilizadas]<a name="tecnologias-utilizadas">
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -64,13 +65,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 [![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)](https://www.python.org/)
 [![LibreOffice](https://img.shields.io/badge/LibreOffice-%2318A303?style=for-the-badge&logo=LibreOffice&logoColor=white)](https://pt-br.libreoffice.org/)
 
-## [Autora](#autora)
+## [Autora]<a name="autora">
 
 Feito por Laís Brum Menezes. Entre em contato!
 
 [![Gmail Badge](https://img.shields.io/badge/-lais.brum@acad.ufsm.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lais.brum@acad.ufsm.br)](mailto:lais.brum@acad.ufsm.br)
 
-## [Licença](#licenca)
+## [Licença]<a name="licenca">
 Este projeto está sob a licença do GNU LGPL v3
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://github.com/laisbrme/UFSM-CS_SEE_App/blob/5e58c8014d30dfc414e16a3f3cf55f8472f37b0e/LICENSE) 
