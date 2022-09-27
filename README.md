@@ -25,8 +25,8 @@ Em desenvolvimento...
 ## [Obter o app]<a name="obterApp">
 - Windows: 
 
-  - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/releases/download/UFSM-CS_SEE_App_720p.zip) 
-  - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/releases/download/UFSM-CS_SEE_App_1080p.zip)
+  - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/releases/download/UFSM_SEE_app_720p) 
+  - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/releases/download/UFSM_SEE_app_1080p)
 
 
 ## [Barramentos Concluídos]<a name="barramentos-concluidos">
