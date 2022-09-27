@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
     Código da interface gráfica da aplicação UFSM SEE
 '''
