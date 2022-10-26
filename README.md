@@ -53,9 +53,7 @@ Em desenvolvimento...
 
 
 ## [Pre Requisitos para desenvolvedores]<a name="pre-requisitos-para-desenvolvedores">
-Antes de começar, você irá precisar ter instalado em sua máquina as seguintes ferramentas:
-[Python 3](https://www.python.org/). 
-Além disto é bom ter um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
+Antes de começar, você irá precisar ter instalado em sua máquina [Python 3](https://www.python.org/), além de um editor para trabalhar com o código como [PyCharm](https://www.jetbrains.com/pt-br/pycharm/) ou [VSCode](https://code.visualstudio.com/)
 
 
 ## [Tecnologias utilizadas]<a name="tecnologias-utilizadas">
