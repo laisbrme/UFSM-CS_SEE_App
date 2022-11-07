@@ -1,6 +1,6 @@
 # [UFSM-CS SEE App]<a name="UFSM-CS_SEE_App">
 
-Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
+Aplicação pedagógica desenvolvida para auxílio na disciplina de Subestações de Energia Elétrica, do curso de Engenharia Elétrica, da Universidade Federal de Santa Maria - Campus Cachoeira do Sul.
 
 
 ## [Tabela de Conteúdo]<a name="tabela-de-conteudo">
@@ -19,11 +19,11 @@ Aplicação de auxílio na disciplina de Subestações de Energia Elétrica, do 
 
 
 ## [Status do Projeto]<a name="status-do-projeto">
-Em desenvolvimento...
+Conclusão da Versão 1.0
 
 
 ## [Obter o app]<a name="obterApp">
-- Windows: 
+- Windows 64-bits: 
 
   - [Resolução HD (720p)](https://github.com/laisbrme/UFSM-CS_SEE_App/raw/main/releases/download/UFSM_SEE_app_720p.rar) 
   - [Resolução Full HD (1080p)](https://github.com/laisbrme/UFSM-CS_SEE_App/raw/main/releases/download/UFSM_SEE_app_1080p.rar)
