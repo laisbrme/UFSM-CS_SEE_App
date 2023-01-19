@@ -42,10 +42,16 @@ Conclusão da Versão 1.0
 
 
 ## [Modificações Futuras]<a name="modificacoes-futuras">
-- Implementar botão para reiniciar a manobra;
-- Implementar LOG das manobras;
-- Adicionar arranjo BD+T- 3-4Ch;
-- Suporte a vários sistemas operacionais (com suporte 32 bits e 64 bits)
+- a implementação da distribuição da aplicação com suporte a vários sistemas operacionais,
+incluindo sistemas com processadores 32-bits e 64-bits;
+- a otimização com relação ao processamento da aplicação SEE-APP;
+53
+- a remoção de alertas nos antivírus;
+- a adição do arranjo barramento duplo com barra de transferência com disjunto três a
+quatro chaves (BD+T-3-4Ch);
+- a implementação de manobras de manutenção nos barramentos;
+- a implementação de um botão para a reinicialização das manobras;
+- a implementação de um arquivo capaz de armazenar as manobras realizadas pelo usuário.
 
 
 ## [Pre Requisitos para usuários]<a name="pre-requisitos-para-usuario)">
